@@ -1,0 +1,24 @@
+.contacts {
+  background-color: rgba(9, 9, 9, 0.5);
+  backdrop-filter: blur(40px);
+  color: $white;
+
+  .content {
+    display: flex;
+
+    & > div {
+      width: 50%;
+    }
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 40px;
+  }
+
+  .value {
+    font-size: 20px;
+    margin-top: 18px;
+  }
+}

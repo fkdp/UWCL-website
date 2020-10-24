@@ -1,0 +1,26 @@
+@mixin skew-background() {
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    transform: skewX(-45deg);
+    transition: transform $transition-time;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &:hover:before {
+    transform: skewX(-45deg) scale(1.05);
+  }
+
+  & > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

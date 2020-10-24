@@ -1,0 +1,12 @@
+- text: LIVE
+  blockId: 'live'
+- text: Program
+  blockId: 'program'
+- text: Partnerzy
+  blockId: 'partners'
+- text: O nas
+  blockId: 'about'
+- text: Galeria
+  blockId: 'gallery'
+- text: Kontakty
+  blockId: 'contacts'

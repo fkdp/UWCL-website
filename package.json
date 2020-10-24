@@ -1,0 +1,50 @@
+{
+  "name": "alacrity-law-website",
+  "description": "Alactiry law website",
+  "version": "2.0.0",
+  "author": "Nazar Dolnyy <nazar.dolnyy@eleks.com>",
+  "keywords": [
+    "Alacrity",
+    "Jekyll"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "gulp && bundle exec jekyll build --config _config.yml,_config.stage.yml",
+    "build.prod": "gulp && bundle exec jekyll build --config _config.yml,_config.prod.yml",
+    "serve": "gulp && bundle exec jekyll serve",
+    "format": "prettier --write ./assets/**/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{scss,json,html,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "IE >= 11",
+    "last 4 versions"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "eslint": "^5.1.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-svg-sprite": "^1.5.0",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.7"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1"
+  }
+}

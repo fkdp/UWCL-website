@@ -1,0 +1,28 @@
+@import 'colors';
+
+.event-line {
+  cursor: pointer;
+  display: flex;
+  min-height: 60px;
+  position: relative;
+
+  & + .event-line {
+    margin-top: 24px;
+  }
+
+  .time {
+    color: $orange;
+    font-size: 20px;
+    font-weight: 700;
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: top left;
+    height: 24px;
+    position: absolute;
+  }
+
+  .artist {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 36px;
+  }
+}

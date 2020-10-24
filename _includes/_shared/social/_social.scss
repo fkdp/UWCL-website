@@ -1,0 +1,12 @@
+@import 'colors';
+
+.social {
+  svg {
+    fill: $white;
+    height: 20px;
+  }
+
+  a + a {
+    margin-left: 20px;
+  }
+}

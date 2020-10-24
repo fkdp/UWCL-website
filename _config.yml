@@ -1,0 +1,24 @@
+destination: public
+sass:
+    style: compressed
+    sass_dir: assets/css
+    load_paths: [ _includes/**/* ]
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      #title: "Ukraina w centrum Lublina"
+      #description: "Alacrity is an easy to use cloud-based platform that enables clients and law firms to manage all their matters through a centralised system."
+      # ogImage: "alacrity_social_symbol.png"
+imagesPrefix: '/assets/images/'
+title: "Ukraina w centrum Lublina"
+include: ['_pages']
+exclude:
+  - gulpfile.js
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock

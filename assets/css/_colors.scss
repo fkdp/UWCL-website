@@ -1,0 +1,11 @@
+$gradient-start-color: #bc4e45;
+$gradient-finish-color: #f4c844;
+$orange: #ef7f1a;
+$blue: #5a9fe0;
+$white: #fff;
+$dark-grey: #212121;
+
+$gradient: linear-gradient(90deg, $gradient-start-color -5%, $gradient-finish-color 65%);
+$transition-time: 0.1s;
+// linear-gradient(45deg, $gradient-start-color 0%, $gradient-finish-color 100%);
+

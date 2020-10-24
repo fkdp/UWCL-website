@@ -1,11 +1,11 @@
 <section id="{{ site.data.menu[1].blockId }}"  class="event-calendar content">
   <h2>Program festiwalu</h2>
-  <div class="lineup">
+  <div class="events">
     {% assign calendar = site.data.texts.event-calendar %}
     {% for day in calendar %} 
       <div class="event-day">
         <div class="date">{{ day.date }}</div>
-        {% for line in day.lineup %}
+        {% for line in day.events %}
           {% include program/event-line.html line=line %}
         {% endfor %}
       </div>

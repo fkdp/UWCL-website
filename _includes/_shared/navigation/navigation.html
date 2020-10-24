@@ -1,11 +1,7 @@
 <nav class="menu">
   {% assign menu = site.data.menu %}
   {% for link in menu %}
-  <div 
-    onclick="(function () { 
-      uwcl.scrollToElement('{{ link.blockId}}');
-    })()"
-  >
+  <div onclick="uwcl.scrollToElement('{{ link.blockId}}')">
     &nbsp;<span>{{ link.text }}</span>
   </div>
   {% endfor %}

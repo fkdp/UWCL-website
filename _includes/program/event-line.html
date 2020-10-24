@@ -1,4 +1,8 @@
 <div class="event-line">
   <div class="time">{{ include.line.time }}</div>
-  <div class="artist">{{ include.line.artist }}</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-{{include.line.id}}');"
+  >{{ include.line.title }}</div>
+  {% include modal/modal.html content=line %}
 </div>

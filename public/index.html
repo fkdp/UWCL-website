@@ -13,60 +13,34 @@
     <header>
   <img
   class="logo"
-  src="/assets/images/uwcl-logo.png" 
+  src="assets/images/uwcl-logo.png" 
   alt="Ukraina w centrum Lublina"
-  onclick="(function () { 
-    uwcl.scrollToElement('intro');
-  })()"
+  onclick="uwcl.scrollToElement('intro')"
 />
   <nav class="menu">
   
   
-  <div 
-    onclick="(function () { 
-      uwcl.scrollToElement('live');
-    })()"
-  >
+  <div onclick="uwcl.scrollToElement('live')">
     &nbsp;<span>LIVE</span>
   </div>
   
-  <div 
-    onclick="(function () { 
-      uwcl.scrollToElement('program');
-    })()"
-  >
+  <div onclick="uwcl.scrollToElement('program')">
     &nbsp;<span>Program</span>
   </div>
   
-  <div 
-    onclick="(function () { 
-      uwcl.scrollToElement('partners');
-    })()"
-  >
+  <div onclick="uwcl.scrollToElement('partners')">
     &nbsp;<span>Partnerzy</span>
   </div>
   
-  <div 
-    onclick="(function () { 
-      uwcl.scrollToElement('about');
-    })()"
-  >
+  <div onclick="uwcl.scrollToElement('about')">
     &nbsp;<span>O nas</span>
   </div>
   
-  <div 
-    onclick="(function () { 
-      uwcl.scrollToElement('gallery');
-    })()"
-  >
+  <div onclick="uwcl.scrollToElement('gallery')">
     &nbsp;<span>Galeria</span>
   </div>
   
-  <div 
-    onclick="(function () { 
-      uwcl.scrollToElement('contacts');
-    })()"
-  >
+  <div onclick="uwcl.scrollToElement('contacts')">
     &nbsp;<span>Kontakty</span>
   </div>
   
@@ -79,17 +53,13 @@
     <h4>Zapraszamy w naszą wspólną wędrówkę w świat ukraiński.<br/>Tworzymy festiwal razem.</h4>
     <button 
       class="skew-button button-blue"
-      onclick="(function () { 
-        uwcl.scrollToElement('live');
-      })()"
+      onclick="uwcl.scrollToElement('live')"
     >
       <span>LIVE</span>
     </button>
     <button 
       class="skew-button button-white-outline"
-      onclick="(function () { 
-        uwcl.scrollToElement('program');
-      })()"
+      onclick="uwcl.scrollToElement('program')"
     >
       <span>Program</span>
     </button>
@@ -101,7 +71,7 @@
 </section>
 <section id="program"  class="event-calendar content">
   <h2>Program festiwalu</h2>
-  <div class="lineup">
+  <div class="events">
     
      
       <div class="event-day">
@@ -109,13 +79,63 @@
         
           <div class="event-line">
   <div class="time">16:00</div>
-  <div class="artist">Warsztaty  hybrydowe UkrART - Tworzenie map myśli i notatek wizualnych - Vadim Gierko</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-1');"
+  >Warsztaty  hybrydowe UkrART - Tworzenie map myśli i notatek wizualnych - Vadim Gierko</div>
+  <div
+  class="modal hidden"
+  id="modal-1"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-1')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-1')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src="https://afisha.london/wp-content/uploads/2020/07/queen-band-pose-black-white-1200x900-1-e1595056214973.jpg"/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">Warsztaty  hybrydowe UkrART - Tworzenie map myśli i notatek wizualnych - Vadim Gierko</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae convallis augue. Curabitur ultricies lacus ac sem suscipit, et fringilla justo fermentum. Aenean luctus vel urna ac congue. Proin maximus luctus nisl, vitae cursus quam tincidunt quis. Phasellus feugiat id odio nec elementum. Etiam erat turpis, feugiat elementum iaculis vel, posuere eleifend velit. In scelerisque libero at tellus porta consectetur. Nam felis enim, placerat sit amet lobortis vehicula, placerat in orci. Ut auctor est ultrices aliquet egestas. Fusce sed elit cursus, porttitor est in, molestie ipsum. Proin in finibus nisi, convallis laoreet enim. Integer eleifend fringilla rhoncus. Nulla facilisi.
+Duis tempus, diam eu lobortis egestas, justo dolor laoreet elit, quis tincidunt enim felis ac ligula. Donec dui sapien, tempus quis commodo eu, laoreet quis magna. Cras quis nibh quis neque convallis ultricies. Pellentesque venenatis pellentesque hendrerit. Mauris faucibus feugiat tortor, eget laoreet lorem vehicula eget. Donec pellentesque orci ac lacus tempus viverra. Donec efficitur, lorem vel consequat commodo, ipsum dui cursus nisi, nec accumsan velit ex at sapien. Pellentesque sed suscipit orci. Aliquam erat volutpat. Vivamus sollicitudin posuere dui vitae pretium. Mauris nec pharetra mi, vitae efficitur ex. In ac sapien sit amet nunc consequat tincidunt. Ut aliquam massa dolor, eget faucibus velit lobortis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris luctus mauris lectus, eu blandit felis vehicula in. Aliquam nulla est, convallis vitae mi ornare, varius placerat lectus.
+Quisque placerat lectus tellus, eget placerat justo tempus sit amet. Quisque non erat mauris. In quis pulvinar massa. Duis id ex fringilla, placerat risus sed, sollicitudin diam. Integer egestas, sapien dignissim faucibus suscipit, orci tellus convallis risus, at rutrum nibh ipsum eu risus. Pellentesque scelerisque arcu nec iaculis faucibus. Etiam in quam nunc. Vestibulum sed nibh at erat dapibus rutrum ut nec dolor. Donec ac ultricies lacus, vel congue nisi. Aliquam accumsan felis sit amet felis dictum, et imperdiet felis faucibus. Pellentesque tellus odio, consectetur ac ultricies nec, efficitur non mauris. Phasellus vel diam a libero faucibus feugiat eu eu libero. Sed ut facilisis nisi, a scelerisque velit. Aliquam a convallis lacus. Donec varius, magna at cursus blandit, eros purus tempor ante, id laoreet odio lectus vel nunc. Nulla non neque est.</div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
           <div class="event-line">
   <div class="time">18:00</div>
-  <div class="artist">"Meet-up UWCL" z twórcami akcji "Rok 1920 - pamięć w czasie zarazy" - Paweł Bobołowicz, Antoniuk oraz "Płomień Braterstwa" - Mateusz Stachiewicz, Olena Bodnar, moderator - Ivan Kysloshchuk</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-2');"
+  >"Meet-up UWCL" z twórcami akcji "Rok 1920 - pamięć w czasie zarazy" - Paweł Bobołowicz, Antoniuk oraz "Płomień Braterstwa" - Mateusz Stachiewicz, Olena Bodnar, moderator - Ivan Kysloshchuk</div>
+  <div
+  class="modal hidden"
+  id="modal-2"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-2')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-2')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src=""/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">"Meet-up UWCL" z twórcami akcji "Rok 1920 - pamięć w czasie zarazy" - Paweł Bobołowicz, Antoniuk oraz "Płomień Braterstwa" - Mateusz Stachiewicz, Olena Bodnar, moderator - Ivan Kysloshchuk</div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
@@ -128,13 +148,61 @@
         
           <div class="event-line">
   <div class="time">18:00</div>
-  <div class="artist">"Meet- up UWCL" z Maryną Potapenko - Wiceministrem młodzieży i sportu Ukrainy</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-3');"
+  >"Meet- up UWCL" z Maryną Potapenko - Wiceministrem młodzieży i sportu Ukrainy</div>
+  <div
+  class="modal hidden"
+  id="modal-3"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-3')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-3')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src="https://cs10.pikabu.ru/post_img/big/2018/04/19/6/152413175814214830.jpg"/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">"Meet- up UWCL" z Maryną Potapenko - Wiceministrem młodzieży i sportu Ukrainy</div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
           <div class="event-line">
   <div class="time">20:00</div>
-  <div class="artist">Online koncert Romana Sasanchyna</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-4');"
+  >Online koncert Romana Sasanchyna</div>
+  <div
+  class="modal hidden"
+  id="modal-4"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-4')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-4')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src=""/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">Online koncert Romana Sasanchyna</div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
@@ -147,13 +215,61 @@
         
           <div class="event-line">
   <div class="time">18:00</div>
-  <div class="artist">Warsztaty UkrART</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-5');"
+  >Warsztaty UkrART</div>
+  <div
+  class="modal hidden"
+  id="modal-5"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-5')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-5')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src="https://bigpicture.ru/wp-content/uploads/2014/09/queen.jpg"/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">Warsztaty UkrART</div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
           <div class="event-line">
   <div class="time">20:00</div>
-  <div class="artist">Finał "Talent Show " UWCL 2020</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-6');"
+  >Finał "Talent Show " UWCL 2020</div>
+  <div
+  class="modal hidden"
+  id="modal-6"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-6')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-6')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src=""/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">Finał "Talent Show " UWCL 2020</div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
@@ -166,13 +282,61 @@
         
           <div class="event-line">
   <div class="time">??:??</div>
-  <div class="artist">Konkurs wiedzy o Ukrainie"Ukraina Terra(in)cognita"</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-7');"
+  >Konkurs wiedzy o Ukrainie"Ukraina Terra(in)cognita"</div>
+  <div
+  class="modal hidden"
+  id="modal-7"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-7')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-7')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src=""/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">Konkurs wiedzy o Ukrainie"Ukraina Terra(in)cognita"</div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
           <div class="event-line">
   <div class="time">??:??</div>
-  <div class="artist">Wirtualna wystawa fotograficzna laureatów konkursu fotograficznego</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-8');"
+  >Wirtualna wystawa fotograficzna laureatów konkursu fotograficznego</div>
+  <div
+  class="modal hidden"
+  id="modal-8"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-8')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-8')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src=""/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">Wirtualna wystawa fotograficzna laureatów konkursu fotograficznego</div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
@@ -185,13 +349,61 @@
         
           <div class="event-line">
   <div class="time">17:00</div>
-  <div class="artist">"Meet- up UWCL" "Kozackie czajki dawniej i dziś" Kapitan Myron Humenetskyi oraz Kapitan Taras Beniakh - moderator Petro Sadovyi</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-9');"
+  >"Meet- up UWCL" "Kozackie czajki dawniej i dziś" Kapitan Myron Humenetskyi oraz Kapitan Taras Beniakh - moderator Petro Sadovyi</div>
+  <div
+  class="modal hidden"
+  id="modal-9"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-9')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-9')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src=""/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">"Meet- up UWCL" "Kozackie czajki dawniej i dziś" Kapitan Myron Humenetskyi oraz Kapitan Taras Beniakh - moderator Petro Sadovyi</div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
           <div class="event-line">
   <div class="time">20:00</div>
-  <div class="artist">Online koncert ukraińskiego zespołu Ivan Navi</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-10');"
+  >Online koncert ukraińskiego zespołu Ivan Navi</div>
+  <div
+  class="modal hidden"
+  id="modal-10"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-10')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-10')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src=""/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">Online koncert ukraińskiego zespołu Ivan Navi</div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
@@ -204,19 +416,91 @@
         
           <div class="event-line">
   <div class="time">10:00</div>
-  <div class="artist">Warsztaty UkrART</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-11');"
+  >Warsztaty UkrART</div>
+  <div
+  class="modal hidden"
+  id="modal-11"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-11')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-11')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src=""/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">Warsztaty UkrART</div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
           <div class="event-line">
   <div class="time">12:00</div>
-  <div class="artist">Wirtualna gra miejska "Ulicami Lublina"</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-12');"
+  >Wirtualna gra miejska "Ulicami Lublina"</div>
+  <div
+  class="modal hidden"
+  id="modal-12"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-12')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-12')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src=""/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">Wirtualna gra miejska "Ulicami Lublina"</div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
           <div class="event-line">
   <div class="time">18:00</div>
-  <div class="artist">"Meet- up UWCL" - Alim Aliev" Tatarzy krymscy -  rdzenni mieszkańcy Ukrainy: spojrzenie w przyszłość" - moderator Krzysztof Stanowski</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-13');"
+  >"Meet- up UWCL" - Alim Aliev" Tatarzy krymscy -  rdzenni mieszkańcy Ukrainy: spojrzenie w przyszłość" - moderator Krzysztof Stanowski</div>
+  <div
+  class="modal hidden"
+  id="modal-13"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-13')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-13')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src="https://cdn25.img.ria.ru/images/153170/55/1531705597_0:0:2049:1152_600x0_80_0_0_2e8c6531eb7a60ab49b07ef0c4273ad0.jpg"/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">"Meet- up UWCL" - Alim Aliev" Tatarzy krymscy -  rdzenni mieszkańcy Ukrainy: spojrzenie w przyszłość" - moderator Krzysztof Stanowski</div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
@@ -229,19 +513,91 @@
         
           <div class="event-line">
   <div class="time">12:00</div>
-  <div class="artist">Pokaz filmu "Korol Danylo", reżyser -Taras Khymych</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-14');"
+  >Pokaz filmu "Korol Danylo", reżyser -Taras Khymych</div>
+  <div
+  class="modal hidden"
+  id="modal-14"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-14')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-14')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src=""/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">Pokaz filmu "Korol Danylo", reżyser -Taras Khymych</div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
           <div class="event-line">
   <div class="time">14:00</div>
-  <div class="artist">Spotkanie z reżyserem - Taras Khymych</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-15');"
+  >Spotkanie z reżyserem - Taras Khymych</div>
+  <div
+  class="modal hidden"
+  id="modal-15"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-15')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-15')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src=""/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">Spotkanie z reżyserem - Taras Khymych</div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
           <div class="event-line">
   <div class="time">16:00</div>
-  <div class="artist">Spotkanie literackie z Irynoju Vikirczak - moderator Aleksandra Zińczuk</div>
+  <div
+    class="title"
+    onclick="uwcl.openModal('modal-16');"
+  >Spotkanie literackie z Irynoju Vikirczak - moderator Aleksandra Zińczuk</div>
+  <div
+  class="modal hidden"
+  id="modal-16"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-16')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-16')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src="https://static01.nyt.com/images/2018/11/10/arts/10queen-live-aid/08queen-live-aid-facebookJumbo.jpg?year=2018&h=549&w=1050&sig=0x39a30fbd1dd4596de8a550dfe906fa5e"/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">Spotkanie literackie z Irynoju Vikirczak - moderator Aleksandra Zińczuk</div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
         
@@ -258,40 +614,40 @@
       <div class="group">
         <div class="group-name">Sponsory</div>
         <div class="org-logo">
-          <img src="/assets/images//fkdp.jpeg">
+          <img src="assets/images/fkdp.jpeg">
         </div>
       </div>
       <div class="group">
         <div class="group-name">PATRONAT HONOROWY</div>
         <div class="org-logo">
-          <img src="/assets/images//ambasada_ukrainy.JPG">
+          <img src="assets/images/ambasada_ukrainy.JPG">
         </div>
       </div>
       <div class="group">
         <div class="group-name">WSPARCIE FINANSOWE</div>
         <div class="org-logo">
-          <img src="/assets/images//lublin.jpg">
+          <img src="assets/images/lublin.jpg">
         </div>
       </div>
       <div class="group">
         <div class="group-name">PATRONAT MEDIALNY</div>
         <div class="org-logo">
-          <img src="/assets/images//kultura_enter.png">
+          <img src="assets/images/kultura_enter.png">
         </div>
       </div>
       <div class="group full-width">
         <div class="group-name">PARTNERZY</div>
         <div class="logos-line">
           <div class="org-logo">
-            <img src="/assets/images//kolo_naukowe.png">
+            <img src="assets/images/kolo_naukowe.png">
           </div>
           <div class="org-logo">
-            <img src="/assets/images//logo_vadim_gierko.png">
+            <img src="assets/images/logo_vadim_gierko.png">
           </div>
         </div>
         <div class="logos-line">
           <div class="org-logo">
-            <img src="/assets/images//zapora.png">
+            <img src="assets/images/zapora.png">
           </div>
         </div>
       </div>
@@ -307,14 +663,14 @@
       <p>Festiwal “Ukraina w Centrum Lublina” to almanach kultury ukraińskiej w najciekawszych jej formach:</p>
     </div>
     <div>
-      <img class="logo" src="/assets/images/uwcl-logo.png" alt="Ukraina w centrum Lublina" />
+      <img class="logo" src="assets/images/uwcl-logo.png" alt="Ukraina w centrum Lublina" />
     </div>
   </div>
 </section>
 <section id="gallery" class="gallery">
   <div>Gallery</div>
   <div class="photo">
-    <img src="/assets/images/queen.jpg"/>
+    <img src="assets/images/queen.jpg"/>
   </div>
 </section>
 <section id="contacts" class="contacts">
@@ -346,60 +702,34 @@
     <footer>
   <img
   class="logo"
-  src="/assets/images/uwcl-logo.png" 
+  src="assets/images/uwcl-logo.png" 
   alt="Ukraina w centrum Lublina"
-  onclick="(function () { 
-    uwcl.scrollToElement('intro');
-  })()"
+  onclick="uwcl.scrollToElement('intro')"
 />
   <nav class="menu">
   
   
-  <div 
-    onclick="(function () { 
-      uwcl.scrollToElement('live');
-    })()"
-  >
+  <div onclick="uwcl.scrollToElement('live')">
     &nbsp;<span>LIVE</span>
   </div>
   
-  <div 
-    onclick="(function () { 
-      uwcl.scrollToElement('program');
-    })()"
-  >
+  <div onclick="uwcl.scrollToElement('program')">
     &nbsp;<span>Program</span>
   </div>
   
-  <div 
-    onclick="(function () { 
-      uwcl.scrollToElement('partners');
-    })()"
-  >
+  <div onclick="uwcl.scrollToElement('partners')">
     &nbsp;<span>Partnerzy</span>
   </div>
   
-  <div 
-    onclick="(function () { 
-      uwcl.scrollToElement('about');
-    })()"
-  >
+  <div onclick="uwcl.scrollToElement('about')">
     &nbsp;<span>O nas</span>
   </div>
   
-  <div 
-    onclick="(function () { 
-      uwcl.scrollToElement('gallery');
-    })()"
-  >
+  <div onclick="uwcl.scrollToElement('gallery')">
     &nbsp;<span>Galeria</span>
   </div>
   
-  <div 
-    onclick="(function () { 
-      uwcl.scrollToElement('contacts');
-    })()"
-  >
+  <div onclick="uwcl.scrollToElement('contacts')">
     &nbsp;<span>Kontakty</span>
   </div>
   

@@ -1,46 +1,73 @@
 - date: 16.11.2020
-  lineup:
+  events:
     - time: '16:00'
-      artist: 'Warsztaty  hybrydowe UkrART - Tworzenie map myśli i notatek wizualnych - Vadim Gierko'
+      id: '1'
+      title: 'Warsztaty  hybrydowe UkrART - Tworzenie map myśli i notatek wizualnych - Vadim Gierko'
+      imgSrc: 'https://afisha.london/wp-content/uploads/2020/07/queen-band-pose-black-white-1200x900-1-e1595056214973.jpg'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae convallis augue. Curabitur ultricies lacus ac sem suscipit, et fringilla justo fermentum. Aenean luctus vel urna ac congue. Proin maximus luctus nisl, vitae cursus quam tincidunt quis. Phasellus feugiat id odio nec elementum. Etiam erat turpis, feugiat elementum iaculis vel, posuere eleifend velit. In scelerisque libero at tellus porta consectetur. Nam felis enim, placerat sit amet lobortis vehicula, placerat in orci. Ut auctor est ultrices aliquet egestas. Fusce sed elit cursus, porttitor est in, molestie ipsum. Proin in finibus nisi, convallis laoreet enim. Integer eleifend fringilla rhoncus. Nulla facilisi.
+
+  Duis tempus, diam eu lobortis egestas, justo dolor laoreet elit, quis tincidunt enim felis ac ligula. Donec dui sapien, tempus quis commodo eu, laoreet quis magna. Cras quis nibh quis neque convallis ultricies. Pellentesque venenatis pellentesque hendrerit. Mauris faucibus feugiat tortor, eget laoreet lorem vehicula eget. Donec pellentesque orci ac lacus tempus viverra. Donec efficitur, lorem vel consequat commodo, ipsum dui cursus nisi, nec accumsan velit ex at sapien. Pellentesque sed suscipit orci. Aliquam erat volutpat. Vivamus sollicitudin posuere dui vitae pretium. Mauris nec pharetra mi, vitae efficitur ex. In ac sapien sit amet nunc consequat tincidunt. Ut aliquam massa dolor, eget faucibus velit lobortis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris luctus mauris lectus, eu blandit felis vehicula in. Aliquam nulla est, convallis vitae mi ornare, varius placerat lectus.
+
+  Quisque placerat lectus tellus, eget placerat justo tempus sit amet. Quisque non erat mauris. In quis pulvinar massa. Duis id ex fringilla, placerat risus sed, sollicitudin diam. Integer egestas, sapien dignissim faucibus suscipit, orci tellus convallis risus, at rutrum nibh ipsum eu risus. Pellentesque scelerisque arcu nec iaculis faucibus. Etiam in quam nunc. Vestibulum sed nibh at erat dapibus rutrum ut nec dolor. Donec ac ultricies lacus, vel congue nisi. Aliquam accumsan felis sit amet felis dictum, et imperdiet felis faucibus. Pellentesque tellus odio, consectetur ac ultricies nec, efficitur non mauris. Phasellus vel diam a libero faucibus feugiat eu eu libero. Sed ut facilisis nisi, a scelerisque velit. Aliquam a convallis lacus. Donec varius, magna at cursus blandit, eros purus tempor ante, id laoreet odio lectus vel nunc. Nulla non neque est.'
     - time: '18:00'
-      artist: '"Meet-up UWCL" z twórcami akcji "Rok 1920 - pamięć w czasie zarazy" - Paweł Bobołowicz, Antoniuk oraz "Płomień Braterstwa" - Mateusz Stachiewicz, Olena Bodnar, moderator - Ivan Kysloshchuk'
+      id: '2'
+      title: '"Meet-up UWCL" z twórcami akcji "Rok 1920 - pamięć w czasie zarazy" - Paweł Bobołowicz, Antoniuk oraz "Płomień Braterstwa" - Mateusz Stachiewicz, Olena Bodnar, moderator - Ivan Kysloshchuk'
 - date: 17.11.2020
-  lineup:
+  events:
     - time: '18:00'
-      artist: '"Meet- up UWCL" z Maryną Potapenko - Wiceministrem młodzieży i sportu Ukrainy'
+      id: '3'
+      imgSrc: 'https://cs10.pikabu.ru/post_img/big/2018/04/19/6/152413175814214830.jpg'
+      title: '"Meet- up UWCL" z Maryną Potapenko - Wiceministrem młodzieży i sportu Ukrainy'
     - time: '20:00'
-      artist: 'Online koncert Romana Sasanchyna'
+      id: '4'
+      title: 'Online koncert Romana Sasanchyna'
 - date: 18.11.2020
-  lineup:
+  events:
     - time: '18:00'
-      artist: 'Warsztaty UkrART'
+      id: '5'
+      title: 'Warsztaty UkrART'
+      imgSrc: 'https://bigpicture.ru/wp-content/uploads/2014/09/queen.jpg'
     - time: '20:00'
-      artist: 'Finał "Talent Show " UWCL 2020'
+      id: '6'
+      imgRsc: 'https://vgorode.ua/img/article/6725/96_main-v1577306183.jpg'
+      title: 'Finał "Talent Show " UWCL 2020'
 - date: 19.11.2020
-  lineup:
+  events:
     - time: '??:??'
-      artist: 'Konkurs wiedzy o Ukrainie"Ukraina Terra(in)cognita"'
+      id: '7'
+      title: 'Konkurs wiedzy o Ukrainie"Ukraina Terra(in)cognita"'
     - time: '??:??'
-      artist: 'Wirtualna wystawa fotograficzna laureatów konkursu fotograficznego'
+      id: '8'
+      title: 'Wirtualna wystawa fotograficzna laureatów konkursu fotograficznego'
 - date: 20.11.2020
-  lineup:
+  events:
     - time: '17:00'
-      artist: '"Meet- up UWCL" "Kozackie czajki dawniej i dziś" Kapitan Myron Humenetskyi oraz Kapitan Taras Beniakh - moderator Petro Sadovyi'
+      id: '9'
+      title: '"Meet- up UWCL" "Kozackie czajki dawniej i dziś" Kapitan Myron Humenetskyi oraz Kapitan Taras Beniakh - moderator Petro Sadovyi'
     - time: '20:00'
-      artist: 'Online koncert ukraińskiego zespołu Ivan Navi'
+      id: '10'
+      title: 'Online koncert ukraińskiego zespołu Ivan Navi'
 - date: 21.11.2020
-  lineup:
+  events:
     - time: '10:00'
-      artist: 'Warsztaty UkrART'
+      id: '11'
+      title: 'Warsztaty UkrART'
     - time: '12:00'
-      artist: 'Wirtualna gra miejska "Ulicami Lublina"'
+      id: '12'
+      title: 'Wirtualna gra miejska "Ulicami Lublina"'
     - time: '18:00'
-      artist: '"Meet- up UWCL" - Alim Aliev" Tatarzy krymscy -  rdzenni mieszkańcy Ukrainy: spojrzenie w przyszłość" - moderator Krzysztof Stanowski'
+      id: '13'
+      title: '"Meet- up UWCL" - Alim Aliev" Tatarzy krymscy -  rdzenni mieszkańcy Ukrainy: spojrzenie w przyszłość" - moderator Krzysztof Stanowski'
+      imgSrc: 'https://cdn25.img.ria.ru/images/153170/55/1531705597_0:0:2049:1152_600x0_80_0_0_2e8c6531eb7a60ab49b07ef0c4273ad0.jpg'
 - date: 22.11.2020
-  lineup:
+  events:
     - time: '12:00'
-      artist: 'Pokaz filmu "Korol Danylo", reżyser -Taras Khymych'
+      id: '14'
+      title: 'Pokaz filmu "Korol Danylo", reżyser -Taras Khymych'
     - time: '14:00'
-      artist: 'Spotkanie z reżyserem - Taras Khymych'
+      id: '15'
+      title: 'Spotkanie z reżyserem - Taras Khymych'
     - time: '16:00'
-      artist: Spotkanie literackie z Irynoju Vikirczak - moderator Aleksandra Zińczuk
+      id: '16'
+      title: Spotkanie literackie z Irynoju Vikirczak - moderator Aleksandra Zińczuk
+      imgSrc: 'https://static01.nyt.com/images/2018/11/10/arts/10queen-live-aid/08queen-live-aid-facebookJumbo.jpg?year=2018&h=549&w=1050&sig=0x39a30fbd1dd4596de8a550dfe906fa5e'

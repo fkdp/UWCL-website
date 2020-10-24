@@ -1,0 +1,21 @@
+<div
+  class="modal hidden"
+  id="modal-{{include.content.id}}"
+  onclick="uwcl.handleModalBackdropClick(event, 'modal-{{include.content.id}}')"
+>
+  <div class="background">
+    <div
+      class="close"
+      onclick="uwcl.closeModal('modal-{{include.content.id}}')"
+    >X</div>
+    <div class="modal-content">
+      <div class="image">
+        <img src="{{include.content.imgSrc}}"/>
+      </div>
+      <div class="wrapper">
+        <div class="heading">{{include.content.title}}</div>
+        <div>{{include.content.description}}</div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -12,7 +12,7 @@ defaults:
       #title: "Ukraina w centrum Lublina"
       #description: "Alacrity is an easy to use cloud-based platform that enables clients and law firms to manage all their matters through a centralised system."
       # ogImage: "alacrity_social_symbol.png"
-imagesPrefix: '/assets/images/'
+imagesPrefix: 'assets/images/'
 title: "Ukraina w centrum Lublina"
 include: ['_pages']
 exclude:

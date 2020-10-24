@@ -14,4 +14,10 @@ header {
   &:hover {
     opacity: 1;
   }
+
+  @media screen and (max-width: $mobile-max-width) {
+    .menu {
+      display: none;
+    }
+  }
 }

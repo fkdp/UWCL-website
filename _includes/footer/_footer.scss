@@ -5,4 +5,12 @@ footer {
   justify-content: space-between;
   height: 212px;
   padding: 25px;
+
+  @media screen and (max-width: $mobile-max-width) {
+    height: auto;
+
+    .menu {
+      flex-direction: column;
+    }
+  }
 }

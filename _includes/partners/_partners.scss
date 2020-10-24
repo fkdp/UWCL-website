@@ -10,6 +10,10 @@
     &.full-width {
       width: 100%;
     }
+
+    @media screen and (max-width: $mobile-max-width) {
+      width: 100%;
+    }
   }
 
   .group-name {
@@ -19,6 +23,11 @@
     padding-bottom: 12px;
     text-transform: uppercase;
     width: 400px;
+
+    @media screen and (max-width: $mobile-max-width) {
+      font-size: 24px;
+      width: auto;
+    }
   }
 
   .org-logo {
@@ -26,7 +35,7 @@
     padding: 36px 0;
 
     img {
-      height: 100%;
+      max-height: 100%;
     }
   }
 

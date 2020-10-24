@@ -20,6 +20,10 @@
       letter-spacing: 0.3em;
       margin-bottom: 26px;
     }
+
+    @media screen and (max-width: $mobile-max-width) {
+      font-size: 50px;
+    }
   }
 
   h4 {
@@ -62,6 +66,11 @@
 
     & + .skew-button {
       margin-left: 56px;
+
+      @media screen and (max-width: $mobile-max-width) {
+        margin-left: auto;
+        margin-top: 22px;
+      }
     }
   }
 }

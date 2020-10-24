@@ -17,6 +17,12 @@ $border-width: 8px;
     &:nth-child(2n+1) {
       border-right: $border-width solid rgba($color: #000000, $alpha: 0.1);
     }
+
+    @media screen and (max-width: $mobile-max-width) {
+      border: none !important;
+      padding: 0 10px;
+      width: auto;
+    }
   }
 
   .placeholder {
@@ -24,6 +30,10 @@ $border-width: 8px;
 
     & + .placeholder {
       border-right: $border-width solid rgba($color: #000000, $alpha: 0.1);
+    }
+
+    @media screen and (max-width: $mobile-max-width) {
+      display: none;
     }
   }
 

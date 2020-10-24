@@ -1,3 +1,5 @@
+@import 'colors';
+
 html,
 body {
   font-family: 'Nunito Sans', sans-serif;
@@ -13,6 +15,14 @@ h2 {
   font-size: 50px;
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (max-width: $mobile-max-width) {
+    font-size: 32px;
+  }
+}
+
+img {
+  max-width: 100%;
 }
 
 .content {

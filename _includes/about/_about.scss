@@ -1,8 +1,68 @@
 .about {
   background: $gradient;
   color: $white;
+  padding: 140px 0 100px 0;
+
+  @media screen and (max-width: $mobile-max-width) {
+    padding: 80px 0 90px 0;
+  }
+
+  h2 {
+    margin: 0 0 50px 0;
+  }
 
   .content {
     display: flex;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 24px;
+
+    @media screen and (max-width: $mobile-max-width) {
+      flex-direction: column-reverse;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .text {
+    width: 55%;
+
+    @media screen and (max-width: $mobile-max-width) {
+      width: auto;
+    }
+  }
+
+  .icons {
+    margin-top: 36px;
+
+    svg + svg {
+      margin-left: 60px;
+    }
+
+    @media screen and (max-width: $mobile-max-width) {
+      svg {
+        width: 48%;
+        margin: 16px 0 !important;
+      }
+    }
+  }
+
+  .logo_wrapper {
+    flex-shrink: 0;
+    margin-left: 120px;
+
+    img {
+      width: 400px;
+    }
+
+    @media screen and (max-width: $mobile-max-width) {
+      margin-left: auto;
+      margin-bottom: 24px;
+      text-align: center;
+
+      img {
+        width: 80%;
+      }
+    }
   }
 }

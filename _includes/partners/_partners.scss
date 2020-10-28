@@ -26,6 +26,7 @@
 
     @media screen and (max-width: $mobile-max-width) {
       font-size: 24px;
+      text-align: center;
       width: auto;
     }
   }
@@ -33,6 +34,11 @@
   .org-logo {
     height: 200px;
     padding: 36px 0;
+
+    @media screen and (max-width: $mobile-max-width) {
+      padding: 24px 0;
+      text-align: center;
+    }
 
     img {
       max-height: 100%;

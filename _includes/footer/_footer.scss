@@ -8,9 +8,23 @@ footer {
 
   @media screen and (max-width: $mobile-max-width) {
     height: auto;
+    flex-direction: column;
+
+    img {
+      margin: 35px 0;
+    }
+
+    nav > div {
+      text-align: center;
+      width: 100%;
+    }
 
     .menu {
       flex-direction: column;
+    }
+
+    .social {
+      margin: 50px 0;
     }
   }
 }

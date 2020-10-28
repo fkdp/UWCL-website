@@ -17,7 +17,7 @@ h2 {
   text-transform: uppercase;
 
   @media screen and (max-width: $mobile-max-width) {
-    font-size: 32px;
+    font-size: 40px;
   }
 }
 
@@ -26,7 +26,7 @@ img {
 }
 
 .content {
-  max-width: 1024px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -34,4 +34,12 @@ img {
 
 .hidden {
   display: none !important;
+}
+
+.showOnMobile {
+  display: none;
+
+  @media screen and (max-width: $mobile-max-width) {
+    display: inline;
+  }
 }

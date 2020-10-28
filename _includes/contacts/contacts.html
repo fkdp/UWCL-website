@@ -10,7 +10,15 @@
       {% include _shared/social/social.html %}
     </div>
     <div class="form">
-      <div class="title">Masz pytania? Napisz do nas!</div>
+      <div class="title">Masz pytania? <span class="showOnMobile"><br/></span>Napisz do nas!</div>
+      <form>
+        <div class="text-inputs">
+          <input type="text" placeholder="Imię"/>
+          <input type="text" placeholder="E-mail"/>
+        </div>
+        <textarea placeholder="Treść wiadomości"></textarea>
+        <button type="submit">Wyślij wiadomość</button>
+      </form>
     </div>
   </div>
 </section>

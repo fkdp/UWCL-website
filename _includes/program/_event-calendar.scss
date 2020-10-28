@@ -20,8 +20,9 @@ $border-width: 8px;
 
     @media screen and (max-width: $mobile-max-width) {
       border: none !important;
+      margin-bottom: 24px;
       padding: 0 10px;
-      width: auto;
+      width: 100%;
     }
   }
 
@@ -41,5 +42,7 @@ $border-width: 8px;
     color: $blue;
     font-family: 'Six Caps', sans-serif;
     font-size: 50px;
+    line-height: 66px;
+    margin-bottom: 4px;
   }
 }

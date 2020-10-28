@@ -7,13 +7,19 @@
     <div
       class="close"
       onclick="uwcl.closeModal('modal-{{include.content.id}}')"
-    >X</div>
+    >
+      {% include _shared/close-button/close-button.html %}
+    </div>
     <div class="modal-content">
       <div class="image">
         <img src="{{include.content.imgSrc}}"/>
       </div>
       <div class="wrapper">
         <div class="heading">{{include.content.title}}</div>
+        <div class="modal-date">
+          <span>{{include.content.time}}</span>
+          <span>{{include.date}}</span>
+        </div>
         <div>
           {% for paragraph in include.content.description %} 
             <p>{{paragraph.p}}</p>

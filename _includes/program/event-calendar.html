@@ -6,7 +6,7 @@
       <div class="event-day">
         <div class="date">{{ day.date }}</div>
         {% for line in day.events %}
-          {% include program/event-line.html line=line %}
+          {% include program/event-line.html line=line date=day.date %}
         {% endfor %}
       </div>
       <div class="placeholder"></div>

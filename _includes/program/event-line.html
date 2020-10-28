@@ -4,5 +4,5 @@
     class="title"
     onclick="uwcl.openModal('modal-{{include.line.id}}');"
   >{{ include.line.title }}</div>
-  {% include modal/modal.html content=line %}
+  {% include modal/modal.html content=line date=include.date %}
 </div>

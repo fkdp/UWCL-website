@@ -1,73 +1,123 @@
 - date: 16.11.2020
   events:
     - time: '16:00'
-      id: '1'
-      title: 'Warsztaty  hybrydowe UkrART - Tworzenie map myśli i notatek wizualnych - Vadim Gierko'
+      id: '16-1'
+      title: 'Warsztaty  UkrART - Tworzenie map myśli i notatek wizualnych - Vadim Gierko'
       imgSrc: 'https://afisha.london/wp-content/uploads/2020/07/queen-band-pose-black-white-1200x900-1-e1595056214973.jpg'
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae convallis augue. Curabitur ultricies lacus ac sem suscipit, et fringilla justo fermentum. Aenean luctus vel urna ac congue. Proin maximus luctus nisl, vitae cursus quam tincidunt quis. Phasellus feugiat id odio nec elementum. Etiam erat turpis, feugiat elementum iaculis vel, posuere eleifend velit. In scelerisque libero at tellus porta consectetur. Nam felis enim, placerat sit amet lobortis vehicula, placerat in orci. Ut auctor est ultrices aliquet egestas. Fusce sed elit cursus, porttitor est in, molestie ipsum. Proin in finibus nisi, convallis laoreet enim. Integer eleifend fringilla rhoncus. Nulla facilisi.
-
-  Duis tempus, diam eu lobortis egestas, justo dolor laoreet elit, quis tincidunt enim felis ac ligula. Donec dui sapien, tempus quis commodo eu, laoreet quis magna. Cras quis nibh quis neque convallis ultricies. Pellentesque venenatis pellentesque hendrerit. Mauris faucibus feugiat tortor, eget laoreet lorem vehicula eget. Donec pellentesque orci ac lacus tempus viverra. Donec efficitur, lorem vel consequat commodo, ipsum dui cursus nisi, nec accumsan velit ex at sapien. Pellentesque sed suscipit orci. Aliquam erat volutpat. Vivamus sollicitudin posuere dui vitae pretium. Mauris nec pharetra mi, vitae efficitur ex. In ac sapien sit amet nunc consequat tincidunt. Ut aliquam massa dolor, eget faucibus velit lobortis nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris luctus mauris lectus, eu blandit felis vehicula in. Aliquam nulla est, convallis vitae mi ornare, varius placerat lectus.
-
-  Quisque placerat lectus tellus, eget placerat justo tempus sit amet. Quisque non erat mauris. In quis pulvinar massa. Duis id ex fringilla, placerat risus sed, sollicitudin diam. Integer egestas, sapien dignissim faucibus suscipit, orci tellus convallis risus, at rutrum nibh ipsum eu risus. Pellentesque scelerisque arcu nec iaculis faucibus. Etiam in quam nunc. Vestibulum sed nibh at erat dapibus rutrum ut nec dolor. Donec ac ultricies lacus, vel congue nisi. Aliquam accumsan felis sit amet felis dictum, et imperdiet felis faucibus. Pellentesque tellus odio, consectetur ac ultricies nec, efficitur non mauris. Phasellus vel diam a libero faucibus feugiat eu eu libero. Sed ut facilisis nisi, a scelerisque velit. Aliquam a convallis lacus. Donec varius, magna at cursus blandit, eros purus tempor ante, id laoreet odio lectus vel nunc. Nulla non neque est.'
+      description:
+        - p: 'Dzięki notowaniu wizualnemu każda informacja jest zapamiętywana, kodowana i kojarzona na wiele sposobów. Treść jest nie tylko zróżnicowana wizualnie, ale także ma swoje właściwe miejsce w “przestrzeni” kartki, co dodatkowo sprzyja zapamiętywaniu / przypominaniu informacji.'
+# -------------------
     - time: '18:00'
-      id: '2'
-      title: '"Meet-up UWCL" z twórcami akcji "Rok 1920 - pamięć w czasie zarazy" - Paweł Bobołowicz, Antoniuk oraz "Płomień Braterstwa" - Mateusz Stachiewicz, Olena Bodnar, moderator - Ivan Kysloshchuk'
+      id: '16-2'
+      title: 'Meet-up UWCL: „Pamięć, która łączy”: Olena Bodnar i Mateusz Stachewicz – projekt „Płomień Braterstwa” oraz Paweł Bobołowicz i Dmytro Antoniuk – „Rok 1920 – pamięć w czasie zarazy”'
+      description:
+        - p: 'Dyskusja “Pamięć, która łączy”, poświęconą stuleciu zawarcia Umowy warszawskiej, powszechnie znanej jako “Sojusz Piłsudski-Petlura” . W wydarzeniu wezmą udział autorzy projektu multimedialnego “Rok 1920 - pamięć w czasie zarazy” Paweł Bobołowicz i Dmytro Antoniuk oraz organizatorzy akcji “Płomień Braterstwa” Mateusz Stachewicz i Ołena Bondar.'
+        - p: '“Rok 1920 - pamięć w czasie zarazy” - projekt multimedialny korespondenta Radia „Wnet” z Kijowa Pawła Bobołowicza oraz krajoznawcy i dziennikarza Dmytra Antoniuka. W ramach projektu dziennikarze wybrali się na wyprawę po miejscach bitew Polaków i Ukraińców przeciwko bolszewikom. Regularnie stąd nadawali korespondencje w Radiu Wnet oraz pisali relacje dla portalu “Słowo polskie”'
+        - p: '“Płomień Braterstwa” - inicjatywa społeczna, która ma na celu upamiętnić  wspólną walkę żołnierzy polskich i ukraińskich w wojnie z bolszewikami. Organizatorami akcji są Programowy Ruch Odkrywców Związku Harcerstwa Polskiego oraz „Płast” – Ukraińska Organizacja Skautowa w Polsce.'
 - date: 17.11.2020
   events:
     - time: '18:00'
-      id: '3'
+      id: '17-1'
       imgSrc: 'https://cs10.pikabu.ru/post_img/big/2018/04/19/6/152413175814214830.jpg'
-      title: '"Meet- up UWCL" z Maryną Potapenko - Wiceministrem młodzieży i sportu Ukrainy'
+      title: 'Meet-up UWCL – „Możliwości rozwoju dla młodzieży ukraińskiej w Ukrainie oraz poza jej granicami”: Maryna Popatenko – Wiceminister Młodzieży i Sportu Ukrainy'
+      description:
+        - p: 'Współczesna ukraińska młodzież to ludzie, którzy starają się rozwijać swój kraj w warunkach wojny hybrydowej, dla których losy ojczyzny są bardzo ważne i nawet, bardzo często będąc poza jej granicami, nie wstydzą się swojego pochodzenia a z dumą o nim mówią. Jakie mają możliwości do samorozwoju, jakie stoją przed nimi wyzwania? Porozmawiamy o tym z Panią Maryną Popatenko – Wiceminister Młodzieży i Sportu Ukrainy.'
+# -------------------
     - time: '20:00'
-      id: '4'
+      id: '17-2'
       title: 'Online koncert Romana Sasanchyna'
+      description:
+        - p: 'Roman Sasanchyn  - ukraiński wokalista, zwycięzca II edycji show «Голос діти» (2015) oraz X edycji show «Голос країни» (2020).'
+        - p: 'W wieku 5 lat, jako mały chłopiec śpiewał piosenki rodzicom, a już w wielku 10 lat śpiewał znanym artystom ukraińskiego show-biznesu  na scenie  I edycji show «Голос діти». Wtedy żaden z jurorów się do niego nie odwrócił. Jednak to tylko zwiększyło jego siły i chęć do działania. Rok później, w 2015 roku Roman skradł serce jak i jurorom tak i publiczności II edycji show «Голос діти» і wygrał ją.  W 2020 r. spróbował swoich sił w dorosłej edycji show. Znów trafił do drużyny Tiny Karol i znów wywalczył pierwszą nagrodę.'
 - date: 18.11.2020
   events:
     - time: '18:00'
-      id: '5'
-      title: 'Warsztaty UkrART'
+      id: '18-1'
+      title: 'Warsztaty UkrART – świeczki dekoracyjne – Natalya Poturay'
       imgSrc: 'https://bigpicture.ru/wp-content/uploads/2014/09/queen.jpg'
+      description:
+        - p: 'Natalya Poturay – pszczelarka z Tarnopola, właścicielka marki „Magia medy”. Wytwarza różne produkty na bazie miodu, wosku i mleczka pszczelego, propolisu, pułku kwiatkowego, lecz przede wszystkim najbardziej lubi tworzyć różne świece z wosku (w postaci aniołów, kwiatów, drzew oraz świece wielkanocne).'
+# -------------------
     - time: '20:00'
-      id: '6'
+      id: '18-2'
       imgRsc: 'https://vgorode.ua/img/article/6725/96_main-v1577306183.jpg'
-      title: 'Finał "Talent Show " UWCL 2020'
+      title: 'Meet-up UWCL – Pomysłodawczyni projektu „Art. Is therapy”: Oleksandra Manisku'
+      description:    
+        - p: 'Oleksandra Manisku – twórczynia projektów artystycznych domowychok.ua oraz „Art is therapy”, których celem jest ukształtowanie optymistycznego spojrzenia na świat, wiara we własne siły, okazja do oderwania się od codzienności i problemów. Oleksandra prowadzi warsztaty z malowania różnymi rodzajami farb, kawą, herbatą i innymi możliwymi środkami oraz tworzy autentyczne dekoracje dla domu.'
+# -------------------
+    - time: '20:00'
+      id: '18-3'
+      title: 'Finał „Talent Show” UWCL 2020'
+      description:
+        - p: 'Konkurs „Talent Show” prowadzony w 3 kategoriach – muzyka, ruch, literatura ma na celu rozwijanie potencjału twórczego utalentowanych studentów i absolwentów, wymiana doświadczeń życia i studiowania w Polsce, perspektyw i trudności, umiejętności oraz propozycje realizacji tego doświadczenia.'
+        - p: 'Prezentacja zwycięzców odbędzie się podczas Finału – 18.11.2020'
 - date: 19.11.2020
   events:
     - time: '??:??'
-      id: '7'
-      title: 'Konkurs wiedzy o Ukrainie"Ukraina Terra(in)cognita"'
+      id: '19-1'
+      title: 'Konkurs wiedzy o Ukrainie „Ukraina Terra (in)cognita”'
+      description:
+        - p: 'To już kolejne spotkanie ze wschodnim sąsiadem Polski - Ukrainą. W tym roku konkurs przyjmuje zupełnie inny kształt – przenosimy go do wirtualności. Tysiąc lat wspólnego sąsiedztwa zaowocowało różnymi wydarzeniami w historii – tymi, które dzieliły ludzi, jak i tymi, o których mówimy z radością. Przed nami wspólne budowanie lepszej Europy bez konfliktów, wojen, napięć, lecz Europy pokoju, wspólnych wartości, partnerstwa, szacunku i zaufania. Nasz konkurs jest propozycją i zachętą do dialogu, do lepszego poznania naszych sąsiadów. W tym roku zapraszamy do udziału w nim nie tylko'
+        - p: 'Cele konkursu:'
+        - p: '- rozbudzanie wśród młodzieży zainteresowań o naszym wschodnim sąsiedzie;'
+        - p: '- przygotowanie do przyszłej współpracy ludzi z obu stron granicy;'
+        - p: '- zachęcenie do realizacji wspólnych projektów;'
+        - p: '- przełamywanie stereotypów na temat sąsiadów;'
+        - p: '- dążenie do wzajemnego poznania, zrozumienia, pojednania obu narodów;'
+        - p: '- poznanie dziedzictwa kulturowego Ukrainy (literatura, architektura, muzyka, sport);'
+        - p: '- poznanie miast partnerskich Lublina;'
+# -------------------
     - time: '??:??'
-      id: '8'
+      id: '19-2'
       title: 'Wirtualna wystawa fotograficzna laureatów konkursu fotograficznego'
+      description:
+        - p: '"Wystawa fotograficzna będzie zwieńczeniem konkursu prowadzonego na Instagramie o nazwie „Kadr z Ukrainy”.'
+        - p: 'Każdy pasjonat jak i amator fotografii, będzie mógł wziąć udział w konkursie i zaprezentować swoje dzieła. Najlepsze prace będą opublikowane na Funpage’u festiwalu na Facebooku oraz umieszczone w gazetce – reportażu z tegorocznej edycji „Ukraina w Centrum Lublina”.'
 - date: 20.11.2020
   events:
     - time: '17:00'
-      id: '9'
-      title: '"Meet- up UWCL" "Kozackie czajki dawniej i dziś" Kapitan Myron Humenetskyi oraz Kapitan Taras Beniakh - moderator Petro Sadovyi'
+      id: '20-1'
+      title: 'Meet-up UWCL – „Kozackie czajki dawniej i dziś”: Kapitan Myron Humenetskyi oraz Kapitan Taras Beniakh'
+      description:
+        - p: 'Morskie kozackie rzemiosło jest nieodłączną częścią ukraińskiej kultury. Za czasów Kozaczczyzny, czajki (statki) były wykorzystywane w morskich pochodach oraz walkach. Aktualnie, na terenie Ukrainy rzemiosło to jest aktywnie odnawiane i popularyzowane. W ostatnim 30-leciu w Ukrainie zbudowano 3 czajki, wzorowane na czajkach kozackich – „Presviata Pokrova”, „Otaman” oraz „Spas”. Pływają one po wodach zarówno ukraińskich jak i europejskich.'
+        - p: 'Kapitan Taras Beniakh – kapitan pierwszej czajki „Presviata Pokrova” zbudowanej we Lwowie na oczątku lat 90-tych, która kilkukrotnie całą Europę. Przybliży nam jak wyglądają takie pochody, życie na czajce, przygody oraz niebezpieczeństwa związane z tygodniowymi wędrówkami.'
+        - p: 'Kapitan Myron Humenetskyy  (pseudonim „Guma”) – główny budowniczy oraz kapitan czajki „Spas”, zbudowanej we Lwowie w 2005 roku na wyprawę do Północnej Ameryki. Członek morskiej grupy w Ukraińskiej Organizacji Skautowej – „Płast”. Podczas spotkania opowie czym zakończyła się owa wymarzona wyprawa i jakie projektu aktualnie są realizowane a jakie planowane na przyszłość.'
+        - p: 'Moderatorem spotkania będzie Petro Sadovyi – członek morskiej grupy w Ukraińskiej organizacji „Płast”– organizator kilku wędrówek na czajce Spas, pasjonat morskiego kozackiego rzemiosła.'
+# -------------------
     - time: '20:00'
-      id: '10'
-      title: 'Online koncert ukraińskiego zespołu Ivan Navi'
+      id: '20-2'
+      title: 'Online koncert ukraińskiego zespołu Ivan NAVI'
+      description:
+        - p: 'Ivan Navi - ukraiński wokalista, dwukrotny nominowany do YUNA Music Award: w kategoriach „Odkrycie roku” (2017) i „Najlepszy wykonawca” (2018), nominowany do Music Award „Золота жар-птиця” (pl. Złoty żar-ptak) w kategoriach „Przełom roku” (2018) i „Najlepszy wykonawca” "(2019), uznany przez autorytatywny portal Tophit.ua" Best Artist of 2018 "za artystę, którego piosenki były najczęściej słyszane w ukraińskich stacjach radiowych, jego piosenka „Це Вона(Зірка)” znalazła się w pierwszej piątce najlepszych piosenek z męskim wokalem.'
 - date: 21.11.2020
   events:
     - time: '10:00'
-      id: '11'
-      title: 'Warsztaty UkrART'
+      id: '21-1'
+      title: 'Warsztaty UkrART – Lalki motanki – Hanna Melnyk'
+      description:
+        - p: 'Słowiańskie motanki nie są zwyczajnymi lalkami. Wykonywane były zawsze z intencją, w skupieniu i świadomym celu, zgodnie z zasadami magii. Samo motanie laleczki było nawiązaniem do połączenia nadzwyczajnych sił z człowiekiem. Zamysł w jakim miała zostać stworzona motanka nadawał kierunek mocy, którą miała emanować. Wyróżniano lalki ochronne, obrzędowe i służące do zabawy. Nawet szmaciana laleczka, wypleciona przez matkę, którą zabawiały się dzieci, posiadała ogromną moc.'
+        - p: 'Laleczki nazywane motankami wykonywane były wyłącznie za pomocą rąk. Tworzyły je głównie kobiety, czasem wspólnie ze swoimi dziećmi. Każda lalka zatrzymywała w sobie fragment duszy i odzwierciedlała twórcę. W kulturze słowiańskiej kukiełki te odgrywały ogromną rolę. Pomagały rozwijać się najmłodszym, towarzyszyły w każdej podróży, codzienności oraz obdarowywano nimi w szczególne okazje. Motankom przypisywano niezwykle magiczną moc – pomocy ludziom, ochrony najbliższych i domostwa, dodatkowo Słowianie byli przekonani, że spełniają najskrytsze pragnienia.'
+# -------------------
     - time: '12:00'
-      id: '12'
-      title: 'Wirtualna gra miejska "Ulicami Lublina"'
+      id: '21-2'
+      title: 'Wirtualna gra miejska „Ulicami Lublina”'
+      description:
+        - p: 'Gra miejska "Ulicami Lublina" ma na celu przypomnienie bądź poznanie ciekawych miejsc naszego miasta, zwłaszcza miejsc związanych z Ukrainą, jej kulturą i tradycją.W tym roku w formie wirtualnej. Pytania będą sformułowane na podstawie filmów, które pomogą Państwu zapoznać się z ciekawymi faktami historii Lublina i jego mieszkańców, a sama gra odbędzie się na platformie testportal.pl w formie różnych pytań i zagadek.'
+# -------------------
     - time: '18:00'
-      id: '13'
-      title: '"Meet- up UWCL" - Alim Aliev" Tatarzy krymscy -  rdzenni mieszkańcy Ukrainy: spojrzenie w przyszłość" - moderator Krzysztof Stanowski'
+      id: '21-3'
+      title: '1. Meet-up UWCL: „Tatarzy krymscy – rdzenni mieszkańcy Ukrainy: spojrzenie w przyszłość”: Alim Aliev'
       imgSrc: 'https://cdn25.img.ria.ru/images/153170/55/1531705597_0:0:2049:1152_600x0_80_0_0_2e8c6531eb7a60ab49b07ef0c4273ad0.jpg'
+      description:
+        - p: 'Alim Aliev – działacz krymskotatarski w Ukrainie. Urodził się w 1988 r w Uzbekistanie, rok później jego rodzina jak i większość Krymskich Tatarów, powróciła na Krym. Zastępca dyrektora generalnego Ukraińskiego Instytutu. Dziennikarz, obrońca praw człowieka, badacz i kierownik projektów edukacyjnych i kulturalnych. Współzałożyciel organizacji publicznych Krym SOS oraz Krymski Dom. Członek ukraińskiego PEN klubu.'
+        - p: 'Krzysztof Stanowski – dyrektor Centrum Współpracy Międzynarodowej w Lublinie, polski działacz społeczny i harcerski. Bardzo zaangażowany w sprawy ukraińskie oraz krymsko-tatarskie.  Współzałożyciel oraz członek komitetu obywatelskiego – Solidarni z Ukrainą.'
 - date: 22.11.2020
   events:
     - time: '12:00'
-      id: '14'
-      title: 'Pokaz filmu "Korol Danylo", reżyser -Taras Khymych'
-    - time: '14:00'
-      id: '15'
-      title: 'Spotkanie z reżyserem - Taras Khymych'
-    - time: '16:00'
-      id: '16'
-      title: Spotkanie literackie z Irynoju Vikirczak - moderator Aleksandra Zińczuk
-      imgSrc: 'https://static01.nyt.com/images/2018/11/10/arts/10queen-live-aid/08queen-live-aid-facebookJumbo.jpg?year=2018&h=549&w=1050&sig=0x39a30fbd1dd4596de8a550dfe906fa5e'
+      id: '22-1'
+      title: 'Spotkanie literackie z Iryną Wikyrczak'
+      description:
+        - p: 'Iryna Wikyrczak  – ukraińska poetka i menedżerka kultury. Pracowała jako dyrektorka wykonawcza festiwali “Meridian Czernowitz” i “Intermezzo” oraz zastępczyni dyrektora w departamencie rozwoju Urzędu Lwowa. Organizowała wycieczki literackie do Polski “Cultour.Ua”. Koordynowała wydarzenia, promujące kulturę ukraińską za granicą, a mianowicie: w Amsterdamie, Krakowie, Berlinie, Bremie oraz Warszawie. Została pierwszą szefową Biura Programu Unii Europejskiej Kreatywna Europa  w Ukrainie. Jest stypendystką programów  Gaude Polonia (2014), Kulturkontakt Austria (2016), Lane Kirkland Scholarship program (2017-2018).'
+        - p: 'Autorka zbioru poezji Rozmowa z aniołem.  Jej poezja przetłumaczona była na angielski, hiszpański, niemiecki i polski. Iryna przełożyła na język ukraiński powieść Pauly McLain “Paryska żona”.'
+        - p: 'Od 2019 r. jest asystentką Olgi Tokarczuk. Mieszka i pracuje we Wrocławiu.'
+        - p: 'Aleksandra Zińczuk - poetka, eseistka, redaktorka naczelna  czasopisma Kultura Enter, wydawczyni, aktywistka społeczna.'

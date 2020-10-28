@@ -1,0 +1,29 @@
+.mobile-menu {
+  background: $gradient;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $white;
+  padding: 96px 24px 24px;
+
+  nav > div {
+    text-align: center;
+    width: 100%;
+
+    & + div {
+      border-top: 1px solid $white;
+    }
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .close-button {
+    top: 36px;
+    right: 24px;
+  }
+}

@@ -1,5 +1,7 @@
 const uwcl = (function() {
   const HIDDEN_CLASS_NAME = 'hidden';
+  const MOBILE_MENU_ID = 'mobile-menu';
+  const HEADER_ID = 'header';
 
   function changeElementVisibility(element, visibility) {
     if (element) {
@@ -17,8 +19,13 @@ const uwcl = (function() {
     }
   }
 
+  function handleMenuClick(elementId) {
+    closeMobileMenu();
+    scrollToElement(elementId);
+  }
+
   function scrollToElement(elementId) {
-    const yOffset = 150;  // header height - make dynamic to cover small screen sizes
+    const yOffset = document.getElementById(HEADER_ID).getBoundingClientRect().height;
     const element = document.getElementById(elementId);
     
     if (element) {
@@ -36,10 +43,20 @@ const uwcl = (function() {
     changeElementVisibility(document.getElementById(modalId), false);
   }
 
+  function openMobileMenu() {
+    changeElementVisibility(document.getElementById(MOBILE_MENU_ID), true);
+  }
+
+  function closeMobileMenu() {
+    changeElementVisibility(document.getElementById(MOBILE_MENU_ID), false);
+  }
+
   return {
-    scrollToElement: scrollToElement,
+    handleMenuClick: handleMenuClick,
     handleModalBackdropClick: handleModalBackdropClick,
     openModal: openModal,
     closeModal: closeModal,
+    openMobileMenu: openMobileMenu,
+    closeMobileMenu: closeMobileMenu,
   };
 })();

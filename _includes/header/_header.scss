@@ -16,8 +16,42 @@ header {
   }
 
   @media screen and (max-width: $mobile-max-width) {
+    height: 100px;
+  
     .menu {
       display: none;
+    }
+
+    .logo {
+      height: 60px;
+      width: auto;
+    }
+  }
+
+  .menu-button {
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+    position: relative;
+
+    .line {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: $white;
+
+      &:nth-child(1) {
+        top: 4px;
+      }
+
+      &:nth-child(2) {
+        top: 14px;
+      }
+
+      &:nth-child(3) {
+        top: 24px;
+      }
     }
   }
 }

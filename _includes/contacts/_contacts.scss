@@ -73,6 +73,10 @@
   input[type=text] {
     height: 46px;
     flex-grow: 1;
+
+    @media screen and (max-width: $mobile-max-width) {
+      width: 100%;
+    }
   }
 
   textarea {
@@ -94,10 +98,19 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 25px;
+
+      @media screen and (max-width: $mobile-max-width) {
+        flex-direction: column;
+      }
     }
 
     input + input {
       margin-left: 30px;
+
+      @media screen and (max-width: $mobile-max-width) {
+        margin-left: auto;
+        margin-top: 30px;
+      }
     }
   }
 

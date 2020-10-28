@@ -1,10 +1,13 @@
 {
-  "name": "alacrity-law-website",
-  "description": "Alactiry law website",
-  "version": "2.0.0",
-  "author": "Nazar Dolnyy <nazar.dolnyy@eleks.com>",
+  "name": "uwcl-website",
+  "description": "Ukraina w centrum Lublina festival website",
+  "version": "1.0.0",
+  "author": "Nazar Dolnyy <nazurti@gmail.com>",
   "keywords": [
-    "Alacrity",
+    "UWCL",
+    "Ukraina w centrum Lublina",
+    "FKDP",
+    "Fundacja Kultury Duchowej Pogranicza",
     "Jekyll"
   ],
   "license": "MIT",

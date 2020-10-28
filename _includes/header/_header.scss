@@ -33,6 +33,12 @@ header {
     height: 32px;
     opacity: 0.8;
     position: relative;
+    display: none;
+
+    @media screen and (max-width: $mobile-max-width) {
+      display: block;
+    }
+
 
     .line {
       position: absolute;

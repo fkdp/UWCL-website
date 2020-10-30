@@ -15,18 +15,11 @@
 
   .content {
     display: flex;
-
-    & > div {
-      width: 50%;
-    }
+    justify-content: space-between;
+    text-align: center;
 
     @media screen and (max-width: $mobile-max-width) {
       flex-direction: column;
-      text-align: center;
-
-      & > div {
-        width: auto;
-      }
     }
   }
 
@@ -51,82 +44,6 @@
 
     & + .title {
       margin-top: 40px;
-    }
-  }
-
-  input, 
-  textarea {
-    background-color: rgba(255, 255, 255, 0.15);
-    border: none;
-    color: $white;
-    font-family: 'Nunito Sans', sans-serif;
-    outline: none;
-    padding: 16px;
-
-    &::placeholder {
-      color: $white;
-      font-size: 15px;
-      font-weight: 400;
-    }
-  }
-
-  input[type=text] {
-    height: 46px;
-    flex-grow: 1;
-
-    @media screen and (max-width: $mobile-max-width) {
-      width: 100%;
-    }
-  }
-
-  textarea {
-    height: 160px;
-    width: 100%;
-    resize: none;
-  }
-
-  .form {
-    .title {
-      font-size: 30px;
-      font-weight: 600;
-      margin-bottom: 24px;
-      text-align: center;
-    }
-
-    .text-inputs {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 25px;
-
-      @media screen and (max-width: $mobile-max-width) {
-        flex-direction: column;
-      }
-    }
-
-    input + input {
-      margin-left: 30px;
-
-      @media screen and (max-width: $mobile-max-width) {
-        margin-left: auto;
-        margin-top: 30px;
-      }
-    }
-  }
-
-  button {
-    background-color: $orange;
-    border: none;
-    color: $white;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 800;
-    height: 46px;
-    margin-top: 35px;
-    width: 100%;
-
-    &:focus {
-      outline: none;
     }
   }
 }

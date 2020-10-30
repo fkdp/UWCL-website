@@ -6,6 +6,10 @@
     height: 20px;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   a + a {
     margin-left: 20px;
   }

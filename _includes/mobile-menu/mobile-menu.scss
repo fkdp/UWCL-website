@@ -10,11 +10,10 @@
   padding: 96px 24px 24px;
 
   nav > div {
-    text-align: center;
-    width: 100%;
+    text-align: right;
 
     & + div {
-      border-top: 1px solid $white;
+      margin-top: 32px;
     }
   }
 
@@ -25,5 +24,10 @@
   .close-button {
     top: 36px;
     right: 24px;
+  }
+
+  .social {
+    margin: 32px 24px;
+    text-align: right;
   }
 }

@@ -4,7 +4,7 @@
   &:before {
     content: '';
     display: block;
-    transform: skewX(-45deg);
+    border-radius: 24px;
     transition: transform $transition-time;
     position: absolute;
     top: 0;
@@ -14,7 +14,7 @@
   }
 
   &:hover:before {
-    transform: skewX(-45deg) scale(1.05);
+    transform: skewX(-45deg);
   }
 
   & > span {

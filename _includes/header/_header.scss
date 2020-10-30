@@ -15,10 +15,11 @@ header {
     opacity: 1;
   }
 
-  @media screen and (max-width: $mobile-max-width) {
+  @media screen and (max-width: $tablet-max-width) {
     height: 100px;
   
-    .menu {
+    .menu,
+    .social {
       display: none;
     }
 
@@ -35,7 +36,7 @@ header {
     position: relative;
     display: none;
 
-    @media screen and (max-width: $mobile-max-width) {
+    @media screen and (max-width: $tablet-max-width) {
       display: block;
     }
 

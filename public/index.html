@@ -7,6 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- photogallery -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+    <!-- -->
     <script src="assets/js/script.js" async></script>
   </head>
   <body>
@@ -886,10 +891,65 @@
 </section>
 <section id="gallery" class="gallery">
   <h2>Gallery</h2>
-  <div class="photo">
-    <img src="assets/images/queen.jpg"/>
+  <div class="content">
+    <div id="nanogallery2" data-nanogallery2='{
+  "thumbnailHeight": 300,
+  "thumbnailWidth": 200,
+  "thumbnailGutterWidth": 16,
+  "thumbnailGutterHeight": 16,
+  "thumbnailBorderHorizontal": 0,
+  "thumbnailBorderVertical": 0,
+  "galleryDisplayMode": "pagination",
+  "galleryMaxRows": 1,
+  "thumbnailLabel": {
+    "display": false
+  },
+  "viewerTools": {
+    "topRight": "fullscreenButton, closeButton"
+  },
+  "galleryMosaic" : [                       
+        { "w": 2, "h": 2, "c": 1, "r": 1 },
+        { "w": 2, "h": 1, "c": 3, "r": 1 },
+        { "w": 2, "h": 1, "c": 3, "r": 2 },
+        { "w": 2, "h": 2, "c": 1, "r": 3 },
+        { "w": 2, "h": 1, "c": 3, "r": 3 },
+        { "w": 2, "h": 1, "c": 3, "r": 4 },
+
+        { "w": 3, "h": 3, "c": 5, "r": 1 },
+        { "w": 3, "h": 2, "c": 8, "r": 1 },
+        { "w": 3, "h": 1, "c": 5, "r": 4 },
+        { "w": 3, "h": 2, "c": 8, "r": 3 }
+      ]
+}'>
+      
+      <a href="https://cs10.pikabu.ru/post_img/big/2018/04/19/6/152413175814214830.jpg"></a>
+      
+      <a href="https://bigpicture.ru/wp-content/uploads/2014/09/queen.jpg"></a>
+      
+      <a href="https://vgorode.ua/img/article/6725/96_main-v1577306183.jpg"></a>
+      
+      <a href="https://cdn25.img.ria.ru/images/153170/55/1531705597_0:0:2049:1152_600x0_80_0_0_2e8c6531eb7a60ab49b07ef0c4273ad0.jpg"></a>
+      
+      <a href="https://cs10.pikabu.ru/post_img/big/2018/04/19/6/152413175814214830.jpg"></a>
+      
+      <a href="https://bigpicture.ru/wp-content/uploads/2014/09/queen.jpg"></a>
+      
+      <a href="https://vgorode.ua/img/article/6725/96_main-v1577306183.jpg"></a>
+      
+      <a href="https://cdn25.img.ria.ru/images/153170/55/1531705597_0:0:2049:1152_600x0_80_0_0_2e8c6531eb7a60ab49b07ef0c4273ad0.jpg"></a>
+      
+      <a href="https://cs10.pikabu.ru/post_img/big/2018/04/19/6/152413175814214830.jpg"></a>
+      
+      <a href="https://bigpicture.ru/wp-content/uploads/2014/09/queen.jpg"></a>
+      
+      <a href="https://vgorode.ua/img/article/6725/96_main-v1577306183.jpg"></a>
+      
+      <a href="https://cdn25.img.ria.ru/images/153170/55/1531705597_0:0:2049:1152_600x0_80_0_0_2e8c6531eb7a60ab49b07ef0c4273ad0.jpg"></a>
+      
+    </div>
   </div>
 </section>
+
 <section id="contacts" class="contacts">
   <h2>Kontakty</h2>
   <div class="content">

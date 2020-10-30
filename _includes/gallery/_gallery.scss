@@ -1,3 +1,15 @@
 .gallery {
   padding: 95px 0 110px 0;
+
+  .nGY2paginationRectangle {
+    border-color: $opaque-grey !important;
+  }
+
+  .nGY2paginationRectangleCurrentPage {
+    border-color: $orange !important;
+  }
+
+  .nGY2Navigationbar {
+    display: none !important;
+  }
 }

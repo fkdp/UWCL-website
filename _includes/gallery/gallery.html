@@ -1,6 +1,10 @@
 <section id="{{ site.data.menu[4].blockId }}" class="gallery">
   <h2>Gallery</h2>
-  <div class="photo">
-    <img src="{{ site.imagesPrefix }}queen.jpg"/>
+  <div class="content">
+    <div id="nanogallery2" data-nanogallery2='{% include gallery/gallerySettings.json %}'>
+      {% for image in site.data.gallery %}
+      <a href="{{ image.url }}"></a>
+      {% endfor %}
+    </div>
   </div>
 </section>

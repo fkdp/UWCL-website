@@ -9,12 +9,11 @@ defaults:
       path: ""
     values:
       layout: "default"
-      #title: "Ukraina w centrum Lublina"
-      #description: "Alacrity is an easy to use cloud-based platform that enables clients and law firms to manage all their matters through a centralised system."
-      # ogImage: "alacrity_social_symbol.png"
+      title: "Festiwal Ukraina w centrum Lublina 2020"
+      description: "Zapraszamy w naszą wspólną wędrówkę w świat ukraiński. Tworzymy festiwal razem!"
+      ogImage: "fb_preview.png"
 imagesPrefix: 'assets/images/'
-title: "Ukraina w centrum Lublina"
-include: ['_pages']
+title: "Festiwal Ukraina w centrum Lublina 2020"
 exclude:
   - gulpfile.js
   - node_modules

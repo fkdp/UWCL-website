@@ -88,6 +88,20 @@
     }
   }
 
+  .ornament-white {
+    background-image: url('../images/ornament_white.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60vw;
+    height: 200px;
+    margin: 0 auto;
+    transform: translateY(30%);
+
+    @media screen and (max-width: $mobile-max-width) {
+      width: 100%;
+    }
+  }
+
   .animations {
     position: absolute;
     bottom: 0;

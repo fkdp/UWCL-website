@@ -22,6 +22,7 @@ const uwcl = (function() {
   
 
   function checkSectionPositions() {
+    console.log('check');
     const innerHeight = (window.innerHeight || document.documentElement.clientHeight) * 0.8;
 
     Array.prototype.forEach.call(sections, section => {
@@ -116,5 +117,6 @@ const uwcl = (function() {
     closeModal: closeModal,
     openMobileMenu: openMobileMenu,
     closeMobileMenu: closeMobileMenu,
+    init: init,
   };
 })();

@@ -7,7 +7,9 @@ const uwcl = (function() {
   let sections;
   let sectionsToshow;
 
-  window.onload = function() {
+  document.addEventListener("DOMContentLoaded", init);
+  
+  function init() {
     sections = document.getElementsByTagName('section');
     sectionsToshow = sections.length;
 

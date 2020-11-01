@@ -1,7 +1,7 @@
 <nav class="menu">
   {% assign menu = site.data.menu %}
   {% for link in menu %}
-  <div onclick="uwcl.handleMenuClick('{{ link.blockId}}')">
+  <div class="transite transite-left sn-{{forloop.index}}" onclick="uwcl.handleMenuClick('{{ link.blockId}}')">
     &nbsp;<span>{{ link.text }}</span>
   </div>
   {% endfor %}

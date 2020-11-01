@@ -2,6 +2,42 @@ const uwcl = (function() {
   const HIDDEN_CLASS_NAME = 'hidden';
   const MOBILE_MENU_ID = 'mobile-menu';
   const HEADER_ID = 'header';
+  const START_TRANSITION_CLASS = 'start';
+  const sections = document.getElementsByTagName('section');
+  
+  let sectionsToshow = sections.length;
+
+  window.onload = function() {
+    setTimeout(() => {
+      document.getElementsByTagName('body')[0].classList.remove('loading');
+      checkSectionPositions();
+    }, 0);
+  }
+  window.addEventListener('scroll', checkSectionPositions);
+
+  function checkSectionPositions() {
+    const innerHeight = (window.innerHeight || document.documentElement.clientHeight) * 0.8;
+
+    Array.prototype.forEach.call(sections, section => {
+      if (
+        isElementInViewport(section, innerHeight) &&
+        !section.classList.contains(START_TRANSITION_CLASS)
+      ) {
+        section.classList.add(START_TRANSITION_CLASS);
+        sectionsToshow--;
+      }
+    });
+
+    if (!sectionsToshow) {
+      window.removeEventListener('scroll', checkSectionPositions);
+    }
+  }
+
+  function isElementInViewport(element, viewportHeight) {
+    const rect = element.getBoundingClientRect();
+
+    return rect.top <= viewportHeight;
+  }
 
   function changeElementVisibility(element, visibility) {
     if (element) {
@@ -36,19 +72,35 @@ const uwcl = (function() {
   }
 
   function openModal(modalId) {
-    changeElementVisibility(document.getElementById(modalId), true);
+    const element = document.getElementById(modalId);
+
+    changeElementVisibility(element, true);
+    setTimeout(function() {
+      element.classList.add(START_TRANSITION_CLASS);
+    }, 0);
   }
 
   function closeModal(modalId) {
-    changeElementVisibility(document.getElementById(modalId), false);
+    const element = document.getElementById(modalId);
+
+    changeElementVisibility(element, false);
+    element.classList.remove(START_TRANSITION_CLASS);
   }
 
   function openMobileMenu() {
-    changeElementVisibility(document.getElementById(MOBILE_MENU_ID), true);
+    const element = document.getElementById(MOBILE_MENU_ID);
+
+    changeElementVisibility(element, true);
+    setTimeout(function() {
+      element.classList.add(START_TRANSITION_CLASS);
+    }, 0);
   }
 
   function closeMobileMenu() {
-    changeElementVisibility(document.getElementById(MOBILE_MENU_ID), false);
+    const element = document.getElementById(MOBILE_MENU_ID);
+
+    changeElementVisibility(element, false);
+    element.classList.remove(START_TRANSITION_CLASS);
   }
 
   return {

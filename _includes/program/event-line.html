@@ -1,8 +1,7 @@
-<div class="event-line">
+<div
+  class="event-line transite transite-up sn-{{(include.animationIndex + 1)}}"
+  onclick="uwcl.openModal('modal-{{include.line.id}}');"
+>
   <div class="time">{{ include.line.time }}</div>
-  <div
-    class="title"
-    onclick="uwcl.openModal('modal-{{include.line.id}}');"
-  >{{ include.line.title }}</div>
-  {% include modal/modal.html content=line date=include.date %}
+  <div class="title">{{ include.line.title }}</div>
 </div>

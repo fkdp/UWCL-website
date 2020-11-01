@@ -25,13 +25,9 @@
     }
   }
 
-  .ornament {
+  .ornament-scaled {
     height: 100%;
-    transform: rotate(45deg);
-
-    &-scaled {
-      transform: rotate(0) scale(1.5);
-    }
+    transform: rotate(0) scale(1.5);
   }
 
   h2 {

@@ -101,10 +101,20 @@
   
     .ornament1 {
       left: 0;
+
+      svg {
+        width: 230px;
+        height: 230px;
+      }
     }
   
     .ornament2 {
       right: 0;
+
+      svg {
+        width: 200px;
+        height: 200px;
+      }
     }
   
     .ornament3 {

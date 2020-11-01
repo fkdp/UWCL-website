@@ -9,6 +9,7 @@
   align-items: center;
   padding-left: 40px;
   padding-right: 40px;
+  position: relative;
 
   h1 {
     font-family: 'Six Caps', sans-serif;
@@ -54,6 +55,7 @@
     cursor: pointer;
     width: 210px;
     height: 45px;
+    text-transform: uppercase;
 
     @include skew-background();
 
@@ -82,6 +84,41 @@
       @media screen and (max-width: $mobile-max-width) {
         margin-left: auto;
         margin-top: 22px;
+      }
+    }
+  }
+
+  .animations {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .ornament {
+      position: absolute;
+      bottom: 0;
+    }
+  
+    .ornament1 {
+      left: 0;
+    }
+  
+    .ornament2 {
+      right: 0;
+    }
+  
+    .ornament3 {
+      left: 0;
+      right: 0;
+    }
+
+    @media screen and (max-width: $mobile-max-width) {
+      .ornament2 {
+        display: none;
+      }
+
+      .ornament3 svg {
+        width: 100%;
       }
     }
   }

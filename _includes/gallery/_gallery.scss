@@ -1,6 +1,10 @@
 .gallery {
   padding: 95px 0 110px 0;
 
+  @media screen and (max-width: $mobile-max-width) {
+    padding: 76px 0 90px 0;
+  }
+
   .nGY2paginationRectangle {
     border-color: $opaque-grey !important;
   }

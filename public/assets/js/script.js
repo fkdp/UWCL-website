@@ -3,17 +3,21 @@ const uwcl = (function() {
   const MOBILE_MENU_ID = 'mobile-menu';
   const HEADER_ID = 'header';
   const START_TRANSITION_CLASS = 'start';
-  const sections = document.getElementsByTagName('section');
   
-  let sectionsToshow = sections.length;
+  let sections;
+  let sectionsToshow;
 
   window.onload = function() {
-    setTimeout(() => {
-      document.getElementsByTagName('body')[0].classList.remove('loading');
+    sections = document.getElementsByTagName('section');
+    sectionsToshow = sections.length;
+
+    setTimeout(() => {  
       checkSectionPositions();
     }, 0);
+
+    window.addEventListener('scroll', checkSectionPositions);
   }
-  window.addEventListener('scroll', checkSectionPositions);
+  
 
   function checkSectionPositions() {
     const innerHeight = (window.innerHeight || document.documentElement.clientHeight) * 0.8;

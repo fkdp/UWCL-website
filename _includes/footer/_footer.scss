@@ -6,7 +6,7 @@ footer {
   height: 212px;
   padding: 25px;
 
-  @media screen and (max-width: $mobile-max-width) {
+  @media screen and (max-width: $tablet-max-width) {
     height: auto;
     flex-direction: column;
 

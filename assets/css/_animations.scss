@@ -22,6 +22,16 @@ section,
     &-zoom {
       transform: scale(0.5);
     }
+
+    &-ornament {
+      transform: translate(-2 * $translate-value,  2 * $translate-value) rotateZ(0);
+      transition-duration: $duration * 2;
+    }
+
+    &-ornament-with-scale {
+      transform: translate(6 * $translate-value,  6 * $translate-value) rotateZ(0) scale(1);
+      transition-duration: $duration * 2;
+    }
   }
 
   &.start {
@@ -38,6 +48,14 @@ section,
 
       &-zoom {
         transform: scale(1);
+      }
+
+      &-ornament {
+        transform: translate(0, 0) rotateZ(180deg);
+      }
+
+      &-ornament-with-scale {
+        transform: translate(0, 0) rotateZ(90deg) scale(2.5);
       }
     }
   }

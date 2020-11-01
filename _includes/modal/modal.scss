@@ -19,6 +19,11 @@
     width: 80vw;
     max-width: 960px;
     position: relative;
+
+    @media screen and (max-width: $mobile-max-width) {
+      height: 90vh;
+      width: 90vw;
+    }
   }
 
   .close {

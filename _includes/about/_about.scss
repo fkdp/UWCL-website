@@ -17,7 +17,7 @@
     font-weight: bold;
     line-height: 24px;
 
-    @media screen and (max-width: $mobile-max-width) {
+    @media screen and (max-width: $tablet-max-width) {
       flex-direction: column-reverse;
       font-size: 16px;
       line-height: 20px;
@@ -27,7 +27,8 @@
   .text {
     width: 55%;
 
-    @media screen and (max-width: $mobile-max-width) {
+    @media screen and (max-width: $tablet-max-width) {
+      padding: 0 12px;
       width: auto;
     }
   }
@@ -39,7 +40,7 @@
       margin-left: 60px;
     }
 
-    @media screen and (max-width: $mobile-max-width) {
+    @media screen and (max-width: $tablet-max-width) {
       svg {
         width: 48%;
         margin: 16px 0 !important;

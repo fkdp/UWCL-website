@@ -1,11 +1,37 @@
 .contacts {
-  background-color: rgba(9, 9, 9, 0.5);
-  backdrop-filter: blur(40px);
   color: $white;
-  padding: 90px 0 70px;
+  position: relative;
 
-  @media screen and (max-width: $mobile-max-width) {
-    padding: 70px 0 40px;
+  .wrapper {
+    background-color: rgba(9, 9, 9, 0.5);
+    backdrop-filter: blur(15px);
+    padding: 90px 0 70px;
+  }
+
+  .backdrop {
+    background: $gradient; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @media screen and (max-width: $mobile-max-width) {
+      padding: 70px 0 40px;
+    }
+  }
+
+  .ornament {
+    height: 100%;
+    transform: rotate(45deg);
+
+    &-scaled {
+      transform: rotate(0) scale(1.5);
+    }
   }
 
   h2 {
@@ -18,7 +44,12 @@
     justify-content: space-between;
     text-align: center;
 
-    @media screen and (max-width: $mobile-max-width) {
+    & > div {
+      flex-shrink: 0;
+    }
+  
+
+    @media screen and (max-width: $tablet-max-width) {
       flex-direction: column;
     }
   }
@@ -28,7 +59,7 @@
     line-height: 40px;
     font-weight: 400;
 
-    @media screen and (max-width: $mobile-max-width) {
+    @media screen and (max-width: $tablet-max-width) {
       margin-top: 36px;
     }
 

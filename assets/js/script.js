@@ -2,7 +2,9 @@ const uwcl = (function() {
   const HIDDEN_CLASS_NAME = 'hidden';
   const MOBILE_MENU_ID = 'mobile-menu';
   const HEADER_ID = 'header';
+  const COOKIE_BANNER_ID = 'cookie-banner';
   const START_TRANSITION_CLASS = 'start';
+  const STORAGE_KEY = 'accepted-cookies';
   
   let sections;
   let sectionsToshow;
@@ -12,6 +14,10 @@ const uwcl = (function() {
   function init() {
     sections = document.getElementsByTagName('section');
     sectionsToshow = sections.length;
+
+    if (localStorageHasKey(STORAGE_KEY)) {
+      closeCookieBanner();
+    }
 
     setTimeout(() => {  
       checkSectionPositions();
@@ -109,6 +115,30 @@ const uwcl = (function() {
     element.classList.remove(START_TRANSITION_CLASS);
   }
 
+  function closeCookieBanner() {
+    const element = document.getElementById(COOKIE_BANNER_ID);
+
+    changeElementVisibility(element, false);
+    setLocalStorageKey(STORAGE_KEY, true);
+  }
+
+  function localStorageHasKey(key, value) {
+    try {
+      const value = localStorage.getItem(key);
+      return !!value;
+    } catch(e) {
+        return false;
+    }
+  }
+
+  function setLocalStorageKey(key, value) {
+    try {
+      localStorage.setItem(key, value);
+    } catch(e) {
+      
+    }
+  }
+
   return {
     handleMenuClick: handleMenuClick,
     handleModalBackdropClick: handleModalBackdropClick,
@@ -116,6 +146,7 @@ const uwcl = (function() {
     closeModal: closeModal,
     openMobileMenu: openMobileMenu,
     closeMobileMenu: closeMobileMenu,
+    closeCookieBanner: closeCookieBanner,
     init: init,
   };
 })();

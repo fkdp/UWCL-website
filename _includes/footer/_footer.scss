@@ -28,3 +28,16 @@ footer {
     }
   }
 }
+
+.finance-support {
+  @include flex(space-between, center);
+  background-color: $dark-grey;
+  color: $white;
+  font-size: 14px;
+  padding: 0 25px 25px;
+
+  img {
+    height: 50px;
+    margin-left: 16px;
+  }
+}

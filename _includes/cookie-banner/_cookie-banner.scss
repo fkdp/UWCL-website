@@ -1,0 +1,33 @@
+@import 'mixins';
+
+.cookie-banner {
+  @include flex(space-between, center);
+  background-color: $white;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  opacity: 0.8;
+  transition: opacity $transition-time;
+  z-index: 3;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .accept-button {
+    @include font(14px, 800, 20px);
+    @include size(100px, 36px);
+    @include skew-background();
+    color: $white;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-left: 16px;
+
+    &:before {
+      background-color: $orange;
+    }
+  }
+}

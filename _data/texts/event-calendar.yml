@@ -2,7 +2,7 @@
   events:
     - time: '16:00'
       id: '16-1'
-      title: 'Warsztaty  UkrART - Tworzenie map myśli i notatek wizualnych - Vadim Gierko'
+      title: 'Warsztaty UkrART - Tworzenie map myśli i notatek wizualnych - Vadim Gierko'
       imgSrc: 'vadim_gierko.jpg'
       recordLink: 'https://www.youtube.com/watch?v=vsl3gBVO2k4'
       description:

@@ -30,7 +30,7 @@ section {
 }
 
 .content {
-  max-width: 1280px;
+  max-width: $large-desktop-min-width;
   margin: 0 auto;
   padding: 20px;
 }

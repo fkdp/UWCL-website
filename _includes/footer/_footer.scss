@@ -1,8 +1,8 @@
+@import 'mixins';
+
 footer {
+  @include flex(space-between, center);
   background-color: $dark-grey;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   height: 212px;
   padding: 25px;
 

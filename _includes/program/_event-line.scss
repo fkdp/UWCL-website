@@ -11,9 +11,8 @@
   }
 
   .time {
+    @include font(20px, 700, 28px);
     color: $orange;
-    font-size: 20px;
-    font-weight: 700;
     transform: rotate(-90deg) translateX(-100%);
     transform-origin: top left;
     height: 24px;
@@ -21,8 +20,7 @@
   }
 
   .title {
-    font-size: 16px;
-    line-height: 20px;
+    @include font(16px, normal, 20px);
     margin-left: 36px;
   }
 }

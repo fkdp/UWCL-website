@@ -2,9 +2,7 @@
 @import 'mixins';
 
 .menu {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  @include flex(center, flex-end);
 
   & > div {
     color: $white;

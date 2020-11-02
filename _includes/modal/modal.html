@@ -20,6 +20,16 @@
           <span>{{include.content.time}}</span>
           <span>{{include.date}}</span>
         </div>
+        {% if include.content.recordLink %}
+        <a
+          href="{{include.content.recordLink}}"
+          class="record-link"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <span>Wideo</span>
+        </a>
+        {% endif %}
         <div>
           {% for paragraph in include.content.description %} 
             <p>{{paragraph.p}}</p>

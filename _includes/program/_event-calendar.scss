@@ -1,13 +1,12 @@
 @import 'colors';
+@import 'mixins';
 
 $border-width: 8px;
 
 .event-calendar {
   .events {
-    display: flex;
-    flex-direction: row;
+    @include flex(space-around);
     flex-wrap: wrap;
-    justify-content: space-around;
   }
 
   .event-day {
@@ -39,10 +38,9 @@ $border-width: 8px;
   }
 
   .date {
+    @include font(50px, 400, 66px);
     color: $blue;
     font-family: 'Six Caps', sans-serif;
-    font-size: 50px;
-    line-height: 66px;
     margin-bottom: 4px;
   }
 }

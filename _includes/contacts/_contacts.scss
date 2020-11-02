@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .contacts {
   color: $white;
   position: relative;
@@ -9,16 +11,13 @@
   }
 
   .backdrop {
+    @include flex(space-around, center);
     background: $gradient; 
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 
     @media screen and (max-width: $mobile-max-width) {
       padding: 70px 0 40px;
@@ -36,9 +35,7 @@
   }
 
   .content {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+    @include flex(space-between, center);
 
     & > div {
       flex-shrink: 0;
@@ -51,9 +48,7 @@
   }
 
   .title {
-    font-size: 30px;
-    line-height: 40px;
-    font-weight: 400;
+    @include font(30px, 400, 40px);
 
     @media screen and (max-width: $tablet-max-width) {
       margin-top: 36px;
@@ -65,8 +60,7 @@
   }
 
   .value {
-    font-size: 20px;
-    line-height: 24px;
+    @include font(20px, normal, 24px);
     margin-top: 18px;
 
     & + .title {

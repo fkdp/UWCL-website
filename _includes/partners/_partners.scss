@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .partners {
   .groups {
     display: flex;
@@ -17,9 +19,8 @@
   }
 
   .group-name {
+    @include font(30px, bold, 40px);
     border-bottom: 2px solid $orange;
-    font-size: 30px;
-    font-weight: bold;
     padding-bottom: 12px;
     text-transform: uppercase;
     width: 400px;
@@ -36,11 +37,14 @@
     padding: 36px 0;
 
     @media screen and (max-width: $tablet-max-width) {
+      @include flex(center, center);
       padding: 24px 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       text-align: center;
+    }
+
+    @media screen and (max-width: $mobile-max-width) {
+      height: 150px;
+      padding: 12px 0;
     }
 
     img {
@@ -49,8 +53,12 @@
   }
 
   .logos-line {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(space-between, center);
+
+    @media screen and (max-width: $mobile-max-width) {
+      & + .logos-line .org-logo {
+        height: auto;
+      }
+    }
   }
 }

@@ -1,63 +1,65 @@
+@import 'mixins';
+
 .intro {
+  @include flex(center, center);
   background: $gradient;
   color: $white;
   text-align: center;
   min-height: 100vh;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
 
+  @media screen and (max-width: $mobile-max-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .content {
+      padding: 20px 0;
+    }
+  }
+
   h1 {
+    @include font(100px, 400, 100px);
     font-family: 'Six Caps', sans-serif;
-    font-size: 100px;
-    font-weight: 400;
-    line-height: 100px;
     margin: 0;
 
     @media screen and (max-width: $mobile-max-width) {
-      font-size: 50px;
-      line-height: 50px;
+      @include font(50px, 400, 50px);
     }
   }
 
   h2 {
+    @include font(70px, 400, 70px);
     font-family: 'Six Caps', sans-serif;
-    font-size: 70px;
-    font-weight: 400;
-    line-height: 70px;
     letter-spacing: 0.3em;
     margin: 0;
     margin-bottom: 26px;
 
     @media screen and (max-width: $mobile-max-width) {
-      font-size: 40px;
-      line-height: 40px;
+      @include font(40px, 400, 40px);
     }
   }
 
   h4 {
-    font-size: 20px;
-    font-weight: normal;
-    line-height: 24px;
+    @include font(20px, normal, 24px);
     margin: 30px 0;
+
+    @media screen and (max-width: $mobile-max-width) {
+      @include font(14px, normal, 20px);
+    }
   }
 
   .skew-button {
+    @include font(16px, 700, 16px);
+    @include size(210px, 45px);
+    @include skew-background();
     background-color: transparent;
     border: none;
     color: $white;
-    font-size: 16px;  //!!!
-    font-weight: 700;
     cursor: pointer;
-    width: 210px;
-    height: 45px;
     text-transform: uppercase;
-
-    @include skew-background();
 
     &:focus {
       outline: none;
@@ -89,16 +91,20 @@
   }
 
   .ornament-white {
+    @include size(60vw, 200px);
     background-image: url('../images/ornament_white.png');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 60vw;
-    height: 200px;
     margin: 0 auto;
     transform: translateY(30%);
 
     @media screen and (max-width: $mobile-max-width) {
+      transform: translateY(40%);
       width: 100%;
+    }
+
+    @media screen and (min-width: $large-desktop-min-width) {
+      transform: translateY(10%);
     }
   }
 
@@ -117,8 +123,7 @@
       left: 0;
 
       svg {
-        width: 230px;
-        height: 230px;
+        @include size(230px, 230px);
       }
     }
   
@@ -126,8 +131,7 @@
       right: 0;
 
       svg {
-        width: 200px;
-        height: 200px;
+        @include size(200px, 200px);
       }
     }
   

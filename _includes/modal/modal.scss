@@ -1,4 +1,7 @@
+@import 'mixins';
+
 .modal {
+  @include flex(center, center);
   position: fixed;
   z-index: 3;
   bottom: 0;
@@ -6,42 +9,34 @@
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #000;
   
   .background {
+    @include size(80vw, 80vh);
     background-color: $white;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    height: 80vh;
-    width: 80vw;
     max-width: 960px;
     position: relative;
 
     @media screen and (max-width: $mobile-max-width) {
-      height: 90vh;
-      width: 90vw;
+      @include size(90vw, 90vh);
     }
   }
 
   .close {
     $button-size: 28px;
 
+    @include size($button-size, $button-size);
+    @include flex(center, center);
+    background-color: $orange;
+    border-radius: 50%;
+    color: $white;
+    cursor: pointer;
     position: absolute;
     right: -$button-size / 2;
     top: -$button-size / 2;
-    color: $white;
-    cursor: pointer;
-    width: $button-size;
-    height: $button-size;
-    border-radius: 50%;
-    background-color: $orange;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    
     .close-button {
       transform: scale(0.6);
     }
@@ -65,22 +60,33 @@
   }
 
   .heading {
+    @include font(20px, bold, 28px);
     color: $blue;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 28px;
     margin-bottom: 16px;
   }
 
   .modal-date {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 24px;
+    @include font(18px, bold, 24px);
     color: $grey;
     margin: 8px 0;
 
     span + span {
       margin-left: 24px;
     }
+  }
+
+  .record-link {
+    @include font(16px, 800, 20px);
+    @include size(170px, 45px);
+    @include skew-background();
+    color: $white;
+    display: block;
+    text-decoration: none;
+    margin: 16px 0;
+
+    &:before {
+      background-color: $orange;
+    }
+
   }
 }

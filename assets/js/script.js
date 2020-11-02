@@ -88,7 +88,9 @@ const uwcl = (function() {
 
     changeElementVisibility(element, true);
     setTimeout(function() {
-      element.classList.add(START_TRANSITION_CLASS);
+      if (element) {
+        element.classList.add(START_TRANSITION_CLASS);
+      }
     }, 0);
   }
 

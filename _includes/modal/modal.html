@@ -11,15 +11,21 @@
       {% include _shared/close-button/close-button.html %}
     </div>
     <div class="modal-content">
+      {% if include.content.imgSrc %}
       <div class="image">
         <img src="{{site.imagesPrefix}}events/{{include.content.imgSrc}}"/>
       </div>
+      {% endif %}
       <div class="wrapper">
+        {% if include.content.title %}
         <div class="heading">{{include.content.title}}</div>
+        {% endif %}
+        {% if include.content.time %}
         <div class="modal-date">
           <span>{{include.content.time}}</span>
           <span>{{include.date}}</span>
         </div>
+        {% endif %}
         {% if include.content.recordLink %}
         <a
           href="{{include.content.recordLink}}"

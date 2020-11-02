@@ -1,7 +1,7 @@
 <section id="{{ site.data.menu[1].blockId }}"  class="event-calendar content">
   <h2>Program festiwalu</h2>
   <div class="events">
-    {% assign calendar = site.data.texts.event-calendar %}
+    {% assign calendar = site.data.event-calendar %}
     {% for day in calendar %} 
     {% assign animationIndex = forloop.index + 1 | plus:2 %}
       <div class="event-day">

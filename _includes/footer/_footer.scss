@@ -2,9 +2,18 @@
 
 footer {
   @include flex(space-between, center);
+  flex-direction: column;
   background-color: $dark-grey;
   height: 212px;
   padding: 25px;
+
+  .menu .privacy-policy-link {
+    display: block;
+  }
+
+  @media screen and (min-width: $large-desktop-min-width) {
+    flex-direction: row;
+  }
 
   @media screen and (max-width: $tablet-max-width) {
     height: auto;

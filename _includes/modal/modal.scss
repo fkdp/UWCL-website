@@ -88,4 +88,8 @@
       background-color: $orange;
     }
   }
+
+  a:not(.record-link) {
+    color: $blue;
+  }
 }

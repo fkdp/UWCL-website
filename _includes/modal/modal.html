@@ -37,9 +37,7 @@
         </a>
         {% endif %}
         <div>
-          {% for paragraph in include.content.description %} 
-            <p>{{paragraph.p}}</p>
-          {% endfor %}
+          {{ include.content.description }}
         </div>
       </div>
     </div>

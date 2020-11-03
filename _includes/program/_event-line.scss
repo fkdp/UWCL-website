@@ -6,6 +6,10 @@
   min-height: 60px;
   position: relative;
 
+  &:hover {
+    color: $blue;
+  }
+
   & + .event-line {
     margin-top: 24px;
   }

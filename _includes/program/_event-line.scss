@@ -27,4 +27,13 @@
     @include font(16px, normal, 20px);
     margin-left: 36px;
   }
+
+  .record-link {
+    flex-shrink: 0;
+    width: 22px;
+
+    svg {
+      fill: $orange;
+    }
+  }
 }

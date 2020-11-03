@@ -4,4 +4,14 @@
 >
   <div class="time">{{ include.line.time }}</div>
   <div class="title">{{ include.line.title }}</div>
+  {% if include.line.recordLink %}
+  <a
+    href="{{include.line.recordLink}}"
+    class="record-link"
+    rel="noreferrer noopener"
+    target="_blank"
+  >
+    {% include _shared/svg/youtube.svg %}
+  </a>
+  {% endif %}
 </div>

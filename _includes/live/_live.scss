@@ -6,4 +6,20 @@
   h4 {
     text-align: center;
   }
+
+  iframe {
+    @media screen and (max-width: $mobile-max-width) {
+      height: 400px;
+    }
+  }
+
+  .event {
+    @include font(18px, bold, 24px);
+    color: $blue;
+    margin-bottom: 16px;
+  }
+
+  .time {
+    color: $orange;
+  }
 }

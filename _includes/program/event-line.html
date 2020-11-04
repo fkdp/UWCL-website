@@ -4,9 +4,9 @@
 >
   <div class="time">{{ include.line.time }}</div>
   <div class="title">{{ include.line.title }}</div>
-  {% if include.line.recordLink %}
+  {% if include.line.youtubeVideoId %}
   <a
-    href="{{include.line.recordLink}}"
+    href="https://youtu.be/{{include.line.youtubeVideoId}}"
     class="record-link"
     rel="noreferrer noopener"
     target="_blank"

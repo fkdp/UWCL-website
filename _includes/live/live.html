@@ -1,14 +1,30 @@
 <section id="{{ site.data.menu[0].blockId }}" class="live">
   <h2>FESTIWAL LIVE</h2>
+  {% assign startday = '2020-11-16' %}
+  {% assign calendar = site.data.event-calendar %}
+
+  {% capture nowDate %}{{'now' | date: '%Y-%m-%d' %}}{% endcapture %}
+  {% capture nowNumber %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
+  {% capture startdayNumber %}{{startday | date: '%s' | plus: 0 %}}{% endcapture %}
+
   <div class="content">
-    <h4>Transmisje wydarzeń festiwalowych będą dostępne w dniach 16-22 listopada 2020 r.<br>Teraz zapraszamy do obejrzenia festiwalowych wspomnień osób, które przez lata tworzyły festiwal - <br/>jako organizatorzy, wolontariusze czy goście.</h4>
-    <iframe
-      width="100%"
-      height="600px"
-      src="https://www.youtube.com/embed/videoseries?list=UUWJ2ynufArBLtTRaG77_asg&autoplay=1&loop=1&mute=1"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+    {% if nowNumber < startdayNumber %}
+      <h4>Transmisje wydarzeń festiwalowych będą dostępne w dniach 16-22 listopada 2020 r.<br>Teraz zapraszamy do obejrzenia festiwalowych wspomnień osób, które przez lata tworzyły festiwal - <br/>jako organizatorzy, wolontariusze czy goście.</h4>
+      {% include _shared/youtube/youtube-iframe.html youtubeVideoId="Ogm91XqEj44?list=UUWJ2ynufArBLtTRaG77_asg" %}
+    {% else %}
+      {% for day in calendar %}
+        {% capture eventDate %}{{day.date | date: '%Y-%m-%d' %}}{% endcapture %}
+        {% for event in day.events %}
+          {% if nowDate == eventDate and event.youtubeVideoId %}
+            <div class="event">
+              <div class="time">{{day.date}} {{event.time}}</div>              
+              <div>{{event.title}}</div>
+            </div>
+            {% include _shared/youtube/youtube-iframe.html youtubeVideoId=event.youtubeVideoId %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endif %}
   </div>
 </section>
+

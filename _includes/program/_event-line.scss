@@ -25,10 +25,12 @@
 
   .title {
     @include font(16px, normal, 20px);
+    flex-grow: 1;
     margin-left: 36px;
   }
 
   .record-link {
+    margin-left: 8px;
     flex-shrink: 0;
     width: 22px;
 

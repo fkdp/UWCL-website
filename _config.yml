@@ -9,13 +9,13 @@ defaults:
       path: ""
     values:
       layout: "default"
-      title: "Festiwal Ukraina w centrum Lublina 2020"
+      title: "Festiwal Ukraina w Centrum Lublina 2020"
       description: "Zapraszamy w naszą wspólną wędrówkę w świat ukraiński. Tworzymy festiwal razem!"
-      keywords: "Festiwal, Ukraina w centrum Lublina, UWCL, Lublin, Ukraina, Fundacja Kultury Duchowej Pogranicza, FKDP"
+      keywords: "Festiwal, Ukraina w Centrum Lublina, UWCL, Lublin, Ukraina, Fundacja Kultury Duchowej Pogranicza, FKDP"
       author: "Fundacja Kultury Duchowej Pogranicza"
       ogImage: "fb_preview.jpg"
 imagesPrefix: 'assets/images/'
-title: "Festiwal Ukraina w centrum Lublina 2020"
+title: "Festiwal Ukraina w Centrum Lublina 2020"
 exclude:
   - gulpfile.js
   - node_modules

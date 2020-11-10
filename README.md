@@ -1,4 +1,4 @@
-# Website of the festival 'Ukraina w centrum Lublina 2020'
+# Website of the festival 'Ukraina w Centrum Lublina 2020'
 
 ## Getting Started
 

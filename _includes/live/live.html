@@ -10,7 +10,7 @@
   <div class="content">
     {% if nowNumber < startdayNumber %}
       <h4>Transmisje wydarzeń festiwalowych będą dostępne w dniach 16-22 listopada 2020 r.<br>Teraz zapraszamy do obejrzenia festiwalowych wspomnień osób, które przez lata tworzyły festiwal - <br/>jako organizatorzy, wolontariusze czy goście.</h4>
-      {% include _shared/youtube/youtube-iframe.html youtubeVideoId="Ogm91XqEj44?list=UUWJ2ynufArBLtTRaG77_asg" %}
+      {% include _shared/youtube/youtube-iframe.html youtubeVideoId="videoseries?list=PLgoeM5ac1LEzuyGg26qKq2CEnCc1L243z" %}
     {% else %}
       {% for day in calendar %}
         {% capture eventDate %}{{day.date | date: '%Y-%m-%d' %}}{% endcapture %}

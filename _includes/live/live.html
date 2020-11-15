@@ -1,6 +1,6 @@
 <section id="{{ site.data.menu[0].blockId }}" class="live">
   <h2>FESTIWAL LIVE</h2>
-  {% assign startday = '2020-11-16' %}
+  {% assign startday = '2020-11-15' %}
   {% assign calendar = site.data.event-calendar %}
 
   {% capture nowDate %}{{'now' | date: '%Y-%m-%d' %}}{% endcapture %}
@@ -17,8 +17,16 @@
         {% for event in day.events %}
           {% if nowDate == eventDate and event.youtubeVideoId %}
             <div class="event">
-              <div class="time">{{day.date}} {{event.time}}</div>              
-              <div>{{event.title}}</div>
+              <div class="time">{{day.date}} {{event.time}}</div>           
+              <div class="title">{{event.title}}</div>
+              <p class="warning">W przypadku problemów z transmisją prosimy przejść na
+                <a
+                  href="https://youtu.be/{{event.youtubeVideoId}}"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                >nasz kanał na youtubie.
+                </a>
+              </p>
             </div>
             {% include _shared/youtube/youtube-iframe.html youtubeVideoId=event.youtubeVideoId %}
           {% endif %}

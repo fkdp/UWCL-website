@@ -16,11 +16,23 @@
 
   .event {
     @include font(18px, bold, 24px);
-    color: $blue;
     margin-bottom: 16px;
+  }
+
+  .title {
+    color: $blue;
   }
 
   .time {
     color: $orange;
+  }
+
+  .warning {
+    @include font(16px, normal, 18px);
+
+    a {
+      color: $blue;
+      text-decoration: none;
+    }
   }
 }

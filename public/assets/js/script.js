@@ -4,6 +4,7 @@ const uwcl = (function() {
   const HEADER_ID = 'header';
   const COOKIE_BANNER_ID = 'cookie-banner';
   const START_TRANSITION_CLASS = 'start';
+  const VIDEO_EMBED_CLASS = 'video-embed';
   const STORAGE_KEY = 'accepted-cookies';
   
   let sections;
@@ -21,11 +22,23 @@ const uwcl = (function() {
 
     setTimeout(() => {  
       checkSectionPositions();
+      showLiveEvents();
     }, 0);
 
     window.addEventListener('scroll', checkSectionPositions);
   }
   
+  function showLiveEvents() {
+    const videoBlocks = document.getElementsByClassName(VIDEO_EMBED_CLASS);
+    const today = new Date();
+    const todayFormatted = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+
+    Array.prototype.forEach.call(videoBlocks, block => {
+      if (block.classList.contains(todayFormatted)) {
+        changeElementVisibility(block, true);
+      }
+    });
+  }
 
   function checkSectionPositions() {
     const innerHeight = (window.innerHeight || document.documentElement.clientHeight) * 0.8;

@@ -36,6 +36,12 @@ const uwcl = (function() {
     Array.prototype.forEach.call(videoBlocks, block => {
       if (block.classList.contains(todayFormatted)) {
         changeElementVisibility(block, true);
+      } else {
+        const iframe = block.getElementsByTagName('iframe');
+        
+        if (iframe && iframe[0]) {
+          iframe[0].remove();
+        }
       }
     });
   }

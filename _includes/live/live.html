@@ -10,6 +10,11 @@
     {% for day in calendar %}
       {% for event in day.events %}
         {% if event.youtubeVideoId %}
+          {% if event.backupYoutubeVideoId %}
+            {% assign videoId = event.backupYoutubeVideoId %}
+          {% else %}
+            {% assign videoId = event.youtubeVideoId %}
+          {% endif %}
           <div class="video-embed hidden {{day.date | date: '%Y-%m-%d'}}">
             <div class="event">
               <div class="time">{{day.date}} {{event.time}}</div>           
@@ -23,7 +28,7 @@
                 </a>
               </p>
             </div>
-            {% include _shared/youtube/youtube-iframe.html youtubeVideoId=event.youtubeVideoId %}
+            {% include _shared/youtube/youtube-iframe.html youtubeVideoId=videoId %}
           </div>
         {% endif %}
       {% endfor %}

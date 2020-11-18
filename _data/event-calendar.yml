@@ -153,6 +153,8 @@
       id: '20-2'
       title: 'Online koncert ukraińskiego zespołu Ivan NAVI'
       imgSrc: 'IvanNavi.jpg'
+      youtubeVideoId: 'o4A8sRZ0yQk'
+      backupYoutubeVideoId: 'AvSEidPEwiw'
       description: '
         <p>Ivan Navi - ukraiński wokalista, dwukrotny nominowany do YUNA Music Award: w kategoriach „Odkrycie roku” (2017) i „Najlepszy wykonawca” (2018), nominowany do Music Award „Золота жар-птиця” (pl. Złoty żar-ptak) w kategoriach „Przełom roku” (2018) i „Najlepszy wykonawca” "(2019), uznany przez autorytatywny portal Tophit.ua" Best Artist of 2018 "za artystę, którego piosenki były najczęściej słyszane w ukraińskich stacjach radiowych, jego piosenka „Це Вона (Зірка)” znalazła się w pierwszej piątce najlepszych piosenek z męskim wokalem.</p>
       '
